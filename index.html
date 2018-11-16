@@ -7,6 +7,8 @@
   <body>
       <header class="main-header">
           <nav class="main-navigation">
+<!--             Может ссылу лучше включить в список? -->
+<!--             Не совсем понятно как логотип поставить по середине меню.-->
               <a class="main-header-logo">
                   <img src="img/svg/sedona-logo.svg" width="140" height="72" alt="Логотип городока Седона">
               </a>
@@ -27,72 +29,123 @@
            </nav>
       </header>
       <main class="container">
-          <h1 class="">
+          <section class="intro">
+<!--          Для Секции нужно делать заготовок h2-3?-->          
+<!--          Здесь будет две фоновые картинки для блока введение или это не так реализутся.-->
+          </section>
+          <h1 class="sedona-caption">
               Седона — небольшой городок в Аризоне, заслуживающий большего! 
           </h1>  
-          <h2 class="visually-hidden">
+          <h2 class="features-caption">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </h2>
-          <ul class="features-list">
-             <li>
-                 <h3>Настоящий городок</h3>
-                 <span>№1</span>
-                 <p>
-                     Седона — не аттракцион для туристов, там течёт своя жизнь
-                 </p>
-             </li>
-             <li>
-                 <ul class="advice-list">
-                     <li>
-                         <h3>Жильё</h3>
-                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                     </li>
-                     <li>
-                         <h3>Еда</h3>
-                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                     </li>
-                     <li>
-                         <h3>Сувениры</h3>
-                         <p>Не только китайского, но и местного производства!</p>
-                     </li>    
-                 </ul>
-             </li>
-             <li>
-                 <h3>Там есть Мост дьявола</h3>
-                 <span>№2</span>
-                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-             </li>
-             <li>
-                 <h3>Небольшая площадь</h3>
-                 <span>№3</span>
-                 <p>
-                     Все достопримечательности находятся очень близко
-                 </p>
-             </li>
-             <li>
-                 <h3>Красивая дорога</h3>
-                 <span>№4</span>
-                 <p>
-                     Ехать в Седону из Лас-Вегаса совсем не скучно!
-                 </p>
-             </li>
-             <li>
-                 <h3>Мало туристов</h3>
-                 <span>№5</span>
-                 <p>
-                     Большинство едет в гранд каньон и толпится там
-                 </p>
-             </li> 
-          </ul>
-          <div>
-              <p>Заинтересовались?</p>
+          <section>
+<!--             Есть ли смысол делать список нумерованным?-->
+              <ul class="features-list">
+                 <li class="features-item">
+                     <h3>Настоящий городок</h3>
+                     <span>№1</span>
+                     <p>
+                         Седона — не аттракцион для туристов, там течёт своя жизнь
+                     </p>
+                 </li>
+                 <li>
+<!--                    Верное ли решение сделать вложенный список?-->
+                     <ul class="advice-list">
+                         <li>
+                             <h3>Жильё</h3>
+                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                         </li>
+                         <li>
+                             <h3>Еда</h3>
+                             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                         </li>
+                         <li>
+                             <h3>Сувениры</h3>
+                             <p>Не только китайского, но и местного производства!</p>
+                         </li>    
+                     </ul>
+                 </li>
+                 <li class="features-item">
+                     <h3>Там есть Мост дьявола</h3>
+                     <span>№2</span>
+                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                 </li>
+                 <li class="features-item">
+                     <h3>Небольшая площадь</h3>
+                     <span>№3</span>
+                     <p>
+                         Все достопримечательности находятся очень близко
+                     </p>
+                 </li>
+                 <li class="features-item">
+                     <h3>Красивая дорога</h3>
+                     <span>№4</span>
+                     <p>
+                         Ехать в Седону из Лас-Вегаса совсем не скучно!
+                     </p>
+                 </li>
+                 <li class="features-item">
+                     <h3>Мало туристов</h3>
+                     <span>№5</span>
+                     <p>
+                         Большинство едет в гранд каньон и толпится там
+                     </p>
+                 </li> 
+              </ul>
+          </section>
+          <section class="search-hotels">             
+              <h3 class="visually-hidden">Поиск гостиниц</h3>
+              <b>Заинтересовались?</b>
               <p>
                   Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-          </div>
+<!--              При переходи по ссылки должен открыватся поиск гостиницы?-->
+              <a class="popup" href="№">Поиск гостиницы в седоне</a>
+          </section>
+          
           <div>
+<!--             Для карты нужно было отдельный див делать?-->
               <img src="img/Map.jpg" alt="map">
           </div>
-      </main>     
+      </main>   
+      <footer class="main-footer">
+          <span class="icon-visitsedona">#visitsedona</span>
+          <ul>
+              <li>
+                  <a class="social-button" href="#">
+                        Вконтакте
+                        <img src="img/svg/twitter-icon.svg" alt="twitter">
+                  </a>
+              </li>
+                <li>
+                    <a class="social-button" href="#">
+                        Фейсбук
+                        <img src="img/svg/facebook-icon.svg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        Ютуб
+                        <img src="img/svg/youtube-icon.svg" alt="youtube">
+                    </a>
+                </li>
+          </ul>          
+          <div clas="footer-logo">
+              <span>Website by</span>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">  
+                  <img src="img/svg/logo-htmlacademy.svg" alt="logo-htmlacademy"> 
+              </a>             
+          </div>
+      </footer>  
+ <!-- Модальное окно поиска гостиницы      -->
+      <section class="modal">
+        <p>Дата заезда:</p>
+        <p>Дата выезда:</p>
+        <p>Взрослые:</p>
+        <p>Дети:</p>
+        <button class="button" type="submit">Найти</button>    
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
