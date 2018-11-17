@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vladimir Andrienko](https://up.htmlacademy.ru/htmlcss/23/user/771791).
-* Наставник: [Сергей Вервинский](https://htmlacademy.ru/profile/id13802).
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
