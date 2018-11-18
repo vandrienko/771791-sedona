@@ -155,9 +155,14 @@
                 <label for="date-of-departure">Дата выезда:</label>
                 <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
             </p>  
-        
-        <p>Взрослые:</p>
-        <p>Дети:</p>
+            <p class="modal-item">
+                <label for="modal-adult">Взрослые:</label>
+                <input id="modal-adult" type="number" value="2" min="1">
+            </p>
+            <p class="modal-item">
+                <label for="modal-children">Дети:</label>
+                <input id="modal-children" type="number" value="0" min="0">
+            </p>
             <button class="button" type="submit">Найти</button>   
         </form> 
         <button class="modal-close" type="button">Закрыть</button>
