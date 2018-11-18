@@ -28,8 +28,10 @@
       </header>
       <main class="container">
           <div class="title">
-              <h1 class="visually-hidden"> 
-                  Седона &#8211; рай для отдыхающих посреди аризонской пустыни.
+              <h1> 
+                  <span class="visually-hidden">
+                      Седона &#8211; рай для отдыхающих посреди аризонской пустыни.
+                  </span>
                   <img src="img/svg/welcome-sedona.svg" alt="welcome-sedona">                   
               </h1>    
           </div>
@@ -45,7 +47,7 @@
                  <li class="features-item">
                      <div class="features-real-town">
                          <h3>Настоящий городок</h3>                     
-                         <span>&#8470;1</span>                    
+                         <span>&#8211;&#8470;1&#8211;</span>
                          <p>
                              Седона &#8211; не аттракцион для туристов, там течёт своя жизнь
                          </p>
@@ -69,14 +71,14 @@
                  <li class="features-item">
                      <div class="features-bridge"> 
                          <h3>Там есть Мост дьявола</h3>
-                         <span>&#8470;2</span>
+                         <span>&#8211;&#8470;2&#8211;</span>
                          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                      </div>   
                  </li>
                  <li class="features-item">
                      <div class="features-area">
                          <h3>Небольшая площадь</h3>
-                         <span>&#8470;3</span>
+                         <span>&#8211;&#8470;3&#8211;</span>
                          <p>
                              Все достопримечательности находятся очень близко
                          </p>
@@ -85,7 +87,7 @@
                  <li class="features-item">
                      <div class="features-road">
                          <h3>Красивая дорога</h3>
-                         <span>&#8470;4</span>
+                         <span>&#8211;&#8470;4&#8211;</span>
                          <p>
                              Ехать в Седону из Лас&#8211;Вегаса совсем не скучно!
                          </p>
@@ -94,7 +96,7 @@
                  <li class="features-item">
                      <div class="features-tourists">
                          <h3>Мало туристов</h3>
-                         <span>&#8470;5</span>
+                         <span>&#8211;&#8470;5&#8211;</span>
                          <p>
                              Большинство едет в гранд каньон и толпится там
                          </p>
@@ -112,9 +114,7 @@
           </section>
           <section class="map">
               <h2 class="visually-hidden">Карта</h2>
-              <div>
-                  <img src="img/Map.jpg" alt="map">
-              </div>
+              <img src="img/Map.jpg" alt="map">              
           </section>
       </main>   
       <footer class="main-footer">
@@ -145,26 +145,26 @@
       </footer>  
  <!-- Модальное окно поиска гостиницы      -->
       <section class="modal">
-        <h2 class="visually-hidden">Поиск гостиницы</h2> 
-        <form action="modal-form">
-            <p class="modal-item">
-                <label for="date-of-arrival">Дата заезда:</label>
-                <input id="date-of-arrival" type="text" min="23.04.2017" placeholder="24 апреля 2017"  name="date-of-arrival"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
-            </p>  
-            <p class="modal-item">
-                <label for="date-of-departure">Дата выезда:</label>
-                <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
-            </p>  
-            <p class="modal-item">
-                <label for="modal-adult">Взрослые:</label>
-                <input id="modal-adult" type="number" value="2" min="1">
-            </p>
-            <p class="modal-item">
-                <label for="modal-children">Дети:</label>
-                <input id="modal-children" type="number" value="0" min="0">
-            </p>
-            <button class="button" type="submit">Найти</button>   
-        </form> 
+          <h2 class="visually-hidden">Поиск гостиницы</h2> 
+              <form action="modal-form">
+                  <p class="modal-item">
+                      <label for="date-of-arrival">Дата заезда:</label>
+                      <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-of-arrival"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
+                  </p>  
+                  <p class="modal-item">
+                      <label for="date-of-departure">Дата выезда:</label>
+                      <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
+                  </p>  
+                  <p class="modal-item">
+                      <label for="modal-adult">Взрослые:</label>
+                      <input id="modal-adult" type="number" value="2" min="1">
+                  </p>
+                  <p class="modal-item">
+                      <label for="modal-children">Дети:</label>
+                      <input id="modal-children" type="number" value="0" min="0">
+                  </p>
+                  <button class="button" type="submit">Найти</button>   
+            </form> 
         <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
