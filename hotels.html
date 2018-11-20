@@ -30,21 +30,30 @@
           <h1 class="visually-hidden">Поиск жилья в аренду</h1>
           <section class="filters">
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
-              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <form class="filter" method="post" action="https://echo.htmlacademy.ru"  
+                 oninput="куда.value=откуда.value">
                   <fieldset>
                       <h3>Инфраструктура:</h3>
                       <ul>
                           <li>
-                              <input type="checkbox" id="filter-basin" name="filter-basin" value="filter-basin" checked>
-                              <label for="filter-basin">Бассейн</label>
+                              <input class="visually-hidden" type="checkbox" id="filter-basin" name="filter-basin" value="filter-basin" checked>
+                              <label for="filter-basin">
+                                  <span class="checkbox-indicator"></span>
+                                  Бассейн
+                              </label>                              
                           </li>
                           <li>
-                              <input type="checkbox" id="filter-parking" name="filter-parking" value="filter-parking">
-                              <label for="filter-parking">Парковка</label>
+                              <input class="visually-hidden" type="checkbox" id="filter-parking" name="filter-parking" value="filter-parking">
+                              <label for="filter-parking">
+                              <span class="checkbox-indicator"></span>
+                              Парковка</label>
                           </li>
                         <li>
-                            <input type="checkbox" id="filter-wifi" name="filter-wifi" value="filter-wifi">
-                            <label for="filter-wifi">Wi&#8211;Fi</label>
+                            <input class="visually-hidden" type="checkbox" id="filter-wifi" name="filter-wifi" value="filter-wifi">
+                            <label for="filter-wifi">
+                                <span class="checkbox-indicator"></span>
+                                Wi&#8211;Fi
+                            </label>
                         </li>
                       </ul>
                   </fieldset>
@@ -52,24 +61,33 @@
                       <h3>Тип жилья:</h3>
                       <ul>
                           <li>
-                              <input type="checkbox" id="filter-hotel" name="filter-hotel" value="filter-hotel" checked>
-                              <label for="filter-hotel">Гостиница</label>
+                              <input class="visually-hidden" type="checkbox" id="filter-hotel" name="filter-hotel" value="filter-hotel" checked>
+                              <label for="filter-hotel">
+                                  <span class="checkbox-indicator"></span>
+                                  Гостиница
+                              </label>
                           </li>
                           <li>
-                              <input type="checkbox" id="filter-motel" name="filter-motel" value="filter-motel" checked>
-                              <label for="filter-motel">Мотель</label>
+                              <input class="visually-hidden" type="checkbox" id="filter-motel" name="filter-motel" value="filter-motel" checked>
+                              <label for="filter-motel">
+                                  <span class="checkbox-indicator"></span>
+                                  Мотель
+                              </label>
                           </li>
                           <li>
-                              <input type="checkbox" id="filter-apartments" name="filter-apartments" value="filter-apartments" checked>
-                              <label for="filter-apartments">Апартаменты</label>
+                              <input class="visually-hidden" type="checkbox" id="filter-apartments" name="filter-apartments" value="filter-apartments" checked>
+                              <label for="filter-apartments">
+                                  <span class="checkbox-indicator"></span>
+                                  Апартаменты
+                              </label>
                           </li>
                       </ul>
                   </fieldset>
                   <fieldset>
-                      <h3>Стоимость в сутки (Р):</h3>
-                      <input id="" type="text" placeholder="от 0">
-                      <input id="" type="text" placeholder="до 3000">
-                      <input id=""type="range" max="3000">                                       
+                      <h3>Стоимость в сутки (Р):</h3>     
+                      <span class="slider-start">от 0</span>
+                      <input id=""type="range" max="3000">                       
+                      <span class="slider-finish">до 3000</span>    
                   </fieldset>  
                   <button type="submit" class="filter-button">Показать</button>                   
               </form>
