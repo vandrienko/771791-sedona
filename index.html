@@ -8,7 +8,7 @@
       <header class="main-header">
           <nav class="main-navigation">
               <a class="main-header-logo">
-                  <img src="img/logo.png" width="140" height="72" alt="Логотип городока Седона">
+                  <img src="img/logo.png" width="140" height="72" alt="Логотип город Седона">
               </a>
               <ul class="site-navigation">
                   <li>
@@ -32,7 +32,7 @@
                   <span class="visually-hidden">
                       Седона &#8211; рай для отдыхающих посреди аризонской пустыни.
                   </span>
-                  <img src="img/welcome.png" width="459" height="353" alt="welcome-sedona">                   
+                  <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">   
               </h1>    
           </div>
           <b class="sedona-slogan">
@@ -104,19 +104,17 @@
                  </li> 
               </ul>
           </section>
-          <section class="search-hotels">             
+          <section class="search-forms">             
               <h2 class="visually-hidden">Поиск гостиниц</h2>
               <b>Заинтересовались?</b>
               <p>
                   Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-              <a class="popup" href="№">Поиск гостиницы в седоне</a>
+              <a class="popup" href="№" aria-label="Открытие формы поиска гостиницы">Поиск гостиницы в седоне</a>
           </section>
           <section class="map">
-              <h2 class="visually-hidden">Карта</h2>
-              <div>
-                  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Sqgo7A9gjh6U2HciOXQwVV-Y9-s4x4Tw" width="1200" height="473"></iframe>
-              </div>
+              <h2 class="visually-hidden">Наше расположение на карте</h2>
+              <iframe aria-label="Наш адрес Соединённые Штаты Америки, Аризона, Седона, кординаты GPS: 34.7796,-111.7642" src="https://www.google.com/maps/d/u/0/embed?mid=1Sqgo7A9gjh6U2HciOXQwVV-Y9-s4x4Tw" width="1200" height="473"></iframe>              
           </section>
       </main>   
       <footer class="main-footer">
@@ -146,28 +144,28 @@
           </div>
       </footer>  
  <!-- Модальное окно поиска гостиницы      -->
-      <section class="modal">
+      <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2> 
-              <form action="modal-form">
-                  <p class="modal-item">
+              <form action="https://echo.htmlacademy.ru" class="search-form" method="post" >
+                  <p class="search-form-item">
                       <label for="date-of-arrival">Дата заезда:</label>
                       <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-of-arrival"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
                   </p>  
-                  <p class="modal-item">
+                  <p class="search-form-item">
                       <label for="date-of-departure">Дата выезда:</label>
                       <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >
-                  </p>  
-                  <p class="modal-item">
-                      <label for="modal-adult">Взрослые:</label>
-                      <input id="modal-adult" type="number" value="2" min="1">
+                  </p> 
+                  <p class="search-form-item">
+                      <label for="search-form-adult">Взрослые:</label>
+                      <input id="search-form-adult" type="number" value="2" min="1">
                   </p>
-                  <p class="modal-item">
-                      <label for="modal-children">Дети:</label>
-                      <input id="modal-children" type="number" value="0" min="0">
+                  <p class="search-form-item">
+                      <label for="search-form-children">Дети:</label>
+                      <input id="search-form-children" type="number" value="0" min="0">
                   </p>
                   <button class="button" type="submit">Найти</button>   
             </form> 
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="search-close" type="button" aria-label="Кнопка закрытия поиска">Закрыть</button>
     </section>
   </body>
 </html>
