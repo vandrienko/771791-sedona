@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+    
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+    
+  background-color: #f2f2f2;
+
+}
