@@ -106,10 +106,12 @@ a {
 
 
 .search-forms b {
+    display: block;
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
     color:  #000000;
+    text-align: center;
 }
 
 .search-forms p {
@@ -127,6 +129,7 @@ a {
 
 .button-search{
     background-color: #766357;
+    
 }
 
 .button-search:hover {
@@ -138,5 +141,67 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer {
+    background-color: #ffffff;  
+    line-height: 26px;
+}
 
-.visually-hidden{display:none;}
+.icon-visitsedona {
+    font-weight: bold;
+    font-size: 21px;  
+    color: #000000;
+    text-align: left;
+}
+
+.social-button{
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    text-align: center;
+}
+
+.social-list {    
+    list-style: none;  
+}
+
+.footer-logo {
+    text-align: right;
+    line-height: 26px;
+    color: #000000;
+}
+
+.footer-logo a img:hover {
+    color:  red;
+}
+
+.search {
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.search-form input,
+.search-form input::placeholder {
+
+    font-size: 14px; 
+    font: inherit;
+    color: #000000;
+    font-weight: bold;    
+    background-color: #f2f2f2; 
+}
+
+
+.search-form input:hover,
+.search-form input:hover::placeholder {
+    background-color: #ebebeb; 
+    
+}
+
+.search-form input:focus,
+.search-form input:focus::placeholder {
+    background-color: #ffffff;  
+    border-color: #e5e5e5;
+    color: #000000;
+}
+
