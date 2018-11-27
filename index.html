@@ -30,21 +30,21 @@
            </nav>
       </header>
       <main class="container">
-          <div class="title">
+          <div class="title-sedona">
               <h1> 
                   <span class="visually-hidden">
                       Седона &#8211; рай для отдыхающих посреди аризонской пустыни.
                   </span>
-                  <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">   
+                  <img class="title-sedona-img" src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">   
               </h1>    
           </div>
-          <b class="sedona-slogan">
+          <b class="slogan-sedona">
               Седона &#8211; небольшой городок в Аризоне, заслуживающий большего! 
           </b>  
-          <p class="features-caption">
+          <p class="features-sedona">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
-          <section>
+          <section class="features">
           <h2 class="visually-hidden">Причины по которым стоит посетить Седону</h2>
               <ul class="features-list">
                  <li class="features-item">
@@ -56,21 +56,20 @@
                          </p>
                      </div>
                      <ul class="advice-list">
-                         <li class="advice=item">
+                         <li class="advice-item">
                              <b>Жильё</b>
                              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                          </li>
-                         <li class="advice=item">
+                         <li class="advice-item">
                              <b>Еда</b>
                              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                          </li>
-                         <li class="advice=item">
+                         <li class="advice-item">
                              <b>Сувениры</b>
                              <p>Не только китайского, но и местного производства!</p>
                          </li>    
                      </ul>                    
-                 </li>
-         
+                 </li>         
                  <li class="features-item">
                      <div class="features-bridge"> 
                          <h3>Там есть Мост дьявола</h3>
@@ -113,7 +112,9 @@
               <p>
                   Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
-              <a class="popup" href="№" aria-label="Открытие формы поиска гостиницы">Поиск гостиницы в седоне</a>
+              <a class="button button-search" href="№" aria-label="Открытие формы поиска гостиницы">
+                  Поиск гостиницы в седоне
+              </a>
           </section>
           <section class="map">
               <h2 class="visually-hidden">Наше расположение на карте</h2>
@@ -149,7 +150,7 @@
  <!-- Модальное окно поиска гостиницы      -->
       <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2> 
-              <form action="https://echo.htmlacademy.ru" class="search-form" method="post" >
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post" >
                   <p class="search-form-item">
                       <label for="date-of-arrival">Дата заезда:</label>
                       <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-of-arrival"   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" >

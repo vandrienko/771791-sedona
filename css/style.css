@@ -1,14 +1,142 @@
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
     
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  color: #333333;
-  text-transform: uppercase;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
     
-  background-color: #f2f2f2;
+    text-transform: uppercase;
+        
+    background-color: #f2f2f2;
 
 }
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;    
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;    
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3); 
+    
+}
+
+.container{
+    background-color: #ffffff;
+}
+
+.title-sedona {
+    background-image: url("../img/title-background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.title-sedona-img {
+   text-align: center; 
+}
+
+.slogan-sedona {
+    display: block;
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
+
+.features-sedona {
+    line-height: 26px;
+    text-align: center;
+}
+
+.features-list {
+    list-style: none;  
+    text-align: center;
+}
+
+.features-real-town,
+.features-bridge {
+    color: #ffffff;
+    background-color: #81b3d2;    
+}
+
+.advice-list {
+    list-style: none;
+}
+
+.advice-item b { 
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.features-item h3 {
+    font-size: 21px;
+    font-weight: bold;   
+}
+
+.features-area,
+.features-road,
+.features-tourists {
+    background-color: #eeeeee;
+}
+
+
+
+.search-forms b {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    color:  #000000;
+}
+
+.search-forms p {
+    line-height: 24px;    
+}
+
+.button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background-color: #81b3d2;
+}
+
+.button-search{
+    background-color: #766357;
+}
+
+.button-search:hover {
+    background-color: #604e43;
+}
+
+.button-search:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+.visually-hidden{display:none;}
