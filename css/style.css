@@ -44,7 +44,7 @@ a {
     color: rgba(0, 0, 0, 0.3);     
 }
 
-.container{
+.container {
     background-color: #ffffff;
 }
 
@@ -107,8 +107,6 @@ a {
     background-color: #eeeeee;
 }
 
-
-
 .search-forms b {
     display: block;
     
@@ -132,18 +130,15 @@ a {
     text-transform: uppercase;
     
     background-color: #81b3d2;
-    
 }
 
 .button:hover {    
     background-color: #669ec0;
-   
 }
 
 .button:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-    
+    background-color: #5496bd;    
 }
 
 .search-forms .button-open-search {
@@ -157,8 +152,7 @@ a {
     font-size: 14px;
     line-height: 21px;
     
-    background-color: #766357;    
-     
+    background-color: #766357;        
 }
 
 .button-open-search:hover,
@@ -167,7 +161,7 @@ a {
 }
 
 .button-open-search:active,
-.button-reserve:active{
+.button-reserve:active {
     color: rgba(255, 255, 255, 0.3);
     
     background-color: #503e33;
@@ -206,17 +200,17 @@ a {
 }
 
 
-.footer-logo-img  {
+.footer-logo-img path  {
     fill: #000000;
     width: 115px;
     height: 41px;
 }
 
-.footer-logo-img:hover  {
+.footer-logo-img path:hover  {
     fill: #81b3d2;    
 }
 
-.footer-logo-img:active {
+.footer-logo-img path:active {
     fill: #bdbbbc;
 }
 
@@ -274,7 +268,7 @@ a {
 }
 
 .hotels-list h3:active {
-   color: rgba(0, 0, 0, 0.3);     
+    color: rgba(0, 0, 0, 0.3);     
 }
 
 .hotels-list h3 {
@@ -321,10 +315,10 @@ a {
 
 .rating {
     color: #666666;
-background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
-.display-none{display: none;}
+.display-none {display: none;}
 
 
 
