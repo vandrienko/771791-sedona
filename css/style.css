@@ -6,8 +6,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-    color: #333333;
-    
+    color: #333333;    
     text-transform: uppercase;
         
     background-color: #f2f2f2;
@@ -22,6 +21,7 @@ a {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    
     background-color: #ffffff;    
 }
 
@@ -32,6 +32,7 @@ a {
 .site-navigation a {
     font-weight: bold;
     color: #000000;
+    
     background-color: #ffffff;
 }
 
@@ -40,8 +41,7 @@ a {
 }
 
 .site-navigation a:active {
-    color: rgba(0, 0, 0, 0.3); 
-    
+    color: rgba(0, 0, 0, 0.3);     
 }
 
 .container{
@@ -60,6 +60,7 @@ a {
 
 .slogan-sedona {
     display: block;
+    
     font-size: 21px;
     color: #000000;
     font-weight: bold;
@@ -80,6 +81,7 @@ a {
 .features-real-town,
 .features-bridge {
     color: #ffffff;
+    
     background-color: #81b3d2;    
 }
 
@@ -90,11 +92,13 @@ a {
 .advice-item b { 
     font-size: 21px;
     font-weight: bold;
+    color:  #000000;
 }
 
 .features-item h3 {
     font-size: 21px;
-    font-weight: bold;   
+    font-weight: bold; 
+    color:  #000000;
 }
 
 .features-area,
@@ -107,6 +111,7 @@ a {
 
 .search-forms b {
     display: block;
+    
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
@@ -124,8 +129,10 @@ a {
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    background-color: #81b3d2;
     text-transform: uppercase;
+    
+    background-color: #81b3d2;
+    
 }
 
 .button:hover {    
@@ -134,19 +141,22 @@ a {
 }
 
 .button:active {
-    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    
 }
 
 .search-forms .button-open-search {
     font-size: 21px;
-    line-height: 26;   
+    line-height: 26px;   
+    
     background-color: #766357;
 }
 
 .button-reserve {
     font-size: 14px;
     line-height: 21px;
+    
     background-color: #766357;    
      
 }
@@ -158,13 +168,15 @@ a {
 
 .button-open-search:active,
 .button-reserve:active{
-    background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
+    
+    background-color: #503e33;
 }
 
-.main-footer {
-    background-color: #ffffff;  
+.main-footer {    
     line-height: 26px;
+    
+    background-color: #ffffff;  
 }
 
 .icon-visitsedona {
@@ -177,8 +189,10 @@ a {
 .social-button{
     text-decoration: none;
     list-style: none;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
+    
+    background-color: #81b3d2;
 }
 
 .social-list {    
@@ -191,42 +205,51 @@ a {
     color: #000000;
 }
 
+
 .footer-logo-img  {
-    fill:"red";
-    color: aqua;
-    width:115px;
-    height:41px;
+    fill: #000000;
+    width: 115px;
+    height: 41px;
+}
+
+.footer-logo-img:hover  {
+    fill: #81b3d2;    
+}
+
+.footer-logo-img:active {
+    fill: #bdbbbc;
 }
 
 .search {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
+    
     background-color: rgba(255, 255, 255, 1);
 }
 
 .search-form input,
 .search-form input::placeholder {
-
     font-size: 14px; 
     font: inherit;
     color: #000000;
-    font-weight: bold;    
+    font-weight: bold; 
+    
     background-color: #f2f2f2; 
 }
 
 
 .search-form input:hover,
 .search-form input:hover::placeholder {
-    background-color: #ebebeb; 
-    
+    background-color: #ebebeb;     
 }
 
 .search-form input:focus,
 .search-form input:focus::placeholder {
-    background-color: #ffffff;  
     border-color: #e5e5e5;
     color: #000000;
+    
+    background-color: #ffffff; 
 }
 
 .button-search {
@@ -234,10 +257,24 @@ a {
     line-height: 26px;
 }
 
+.site-navigation .site-navigation-active {
+    color: #766357;
+}
+
 .sorting-form p {
-  font-size: 21px;
+    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+}
+.hotels-item {
+    list-style: none;
+}
+.hotels-list h3:hover {
+    color: #81b3d2;
+}
+
+.hotels-list h3:active {
+   color: rgba(0, 0, 0, 0.3);     
 }
 
 .hotels-list h3 {
@@ -250,6 +287,7 @@ a {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
+    color: #000000;
 }
 
 .sorting-list {
@@ -263,11 +301,32 @@ a {
    color: #000000;
 }
 
+.sorting-list li:nth-child(1) a {
+    color: #81b3d2;
+}
+.sorting-list li:nth-child(2) a,
 .sorting-list li:nth-child(3) a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list li:nth-child(2) a:hover,
+.sorting-list li:nth-child(3) a:hover {
     color: #81b3d2;
 }
 
-.sorting-list li:nth-child(4) a,
-.sorting-list li:nth-child(5) a {
-    color: rgba(0, 0, 0, 0.3)
+.sorting-list li:nth-child(2) a:active,
+.sorting-list li:nth-child(3) a:active {
+    color: #000000;
 }
+
+.rating {
+    color: #666666;
+background-color: #f2f2f2;
+}
+
+.display-none{display: none;}
+
+
+
+
+
