@@ -1,4 +1,6 @@
 body {
+    width: 1200px;
+    
     margin: 0;
     padding: 0;
     
@@ -18,14 +20,30 @@ a {
 }
 
 .main-navigation {
+    display: flex;
+ 
+    justify-content: space-around;
+    align-items: center;
+   min-height: 55px;
+/*    align-content: flex-start;*/
+/*    justify-content: space-between;*/
+    
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    background-color: #ffffff; 
+    background-color: aquamarine;   
+}
+
+.main-header-logo{
+    order: 3;
     
-    background-color: #ffffff;    
 }
 
 .site-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
     list-style: none;
 }
 
@@ -202,8 +220,10 @@ a {
 
 .footer-logo-img path  {
     fill: #000000;
+/*
     width: 115px;
     height: 41px;
+*/
 }
 
 .footer-logo-img path:hover  {
