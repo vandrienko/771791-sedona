@@ -29,74 +29,101 @@ img {
 .container-body {
     width: 1200px;
     margin: 0 auto;
-    background-color: red;    
+/*    background-color: red;    */
 }
 
 
 /*Блок шапка*/
 .main-navigation {  
     padding: 0;
-    margin: 0;    
-    
-    padding-left: 72px;
-    padding-right: 72px;
+    margin: 0;     
+
     position: relative;
        
-    min-height: 55px;    
+
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff; 
+    
+/*    padding-left: 72px;*/
+/*    padding-right: 72px;*/
+/*    min-height: 55px;    */
 }
 
-.main-header-logo{
+.main-header-logo {
     position: absolute;
     left:50%;   
     transform: translateX(-50%);    
 }
 
 .site-navigation {
+     padding: 0;
+    margin: 0;
+    padding-left: 72px;
+    padding-right: 72px;
+/*    min-height: 56px;*/
     list-style: none;    
     font-weight: bold;
+    display: flex;    
+}
+
+.site-navigation a {
+    display: block;
+    padding-left: 0;
+    padding-right: 35px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    margin-right: 112px;
+    vertical-align: middle;
+    
 }
 
 .main-navigation ul {
+/*
     padding: 0;
     margin: 0;
+*/
     
+/*
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 55px; 
+*/
 }
 
 .site-navigation li {
-    flex-basis: 200px;
+/*    flex-basis: 200px;*/
 }
 
 .site-navigation li:nth-child(1) {    
+/*
     margin-right: 40px;
     text-align: left;
+*/
 }
 
 .site-navigation li:nth-child(2) {
-    text-align: left;
+/*    text-align: left;*/
 }
 
 .site-navigation li:nth-child(3) {
-    text-align: right;
+/*    text-align: right;*/
 }
 
 .site-navigation li:nth-child(4) {
+/*
     flex-grow: 0;
     margin-left: 40px;
     text-align: right;
+*/
 }
 
 .site-navigation a {
     font-weight: bold;
     color: #000000;
-    letter-spacing: 0px;
+/*    letter-spacing: 0px;*/
     background-color: #ffffff;
 }
 
@@ -108,7 +135,7 @@ img {
     color: rgba(0, 0, 0, 0.3);     
 }
 
-/*Блок маин*/
+/*_____________________Блок маин_________________________*/
 .container {
     background-color: #ffffff;
 }
@@ -130,12 +157,7 @@ img {
     margin: 0 auto;
 }
 
-.features {
-/*    width:  1200px;*/
-}
-
-
-.slogan-features-con {
+.slogan-reasons-sedona {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,12 +176,28 @@ img {
     margin-bottom: 12px;    
 }
 
-/*Секция примуществ*/
-.features-sedona {
+.reasons-sedona {
     line-height: 26px;
     text-align: center;
     
 }
+
+/*______________Блок примуществ_______________*/
+.features {
+/*    width:  1200px;*/
+}
+
+.features-list {
+    list-style: none;  
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
 
 .features-item div {
     min-height: 256px;
@@ -200,19 +238,6 @@ img {
 }
 
 
-.features-list {
-    list-style: none;  
-    text-align: center;
-
-    margin: 0;
-    padding: 0;
-/*    width:  1200px;*/
-/*    min-height: 256px;*/
-/*    flex-basis: 400px;*/
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 .features-bridge{
 /*    width: 1200px;    */
@@ -269,7 +294,7 @@ img {
     content: "";
     width: 75px;
     height: 80px;  
-/*    position: absolute;*/
+    position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
@@ -420,11 +445,19 @@ img {
 }
 
 .social-list { 
+    display: flex;
     text-align: center;
     list-style: none;  
+    
+}
+
+.social-list li:not(:last-child){
+    margin-right: 5px;
 }
 
 .footer-logo {
+   
+    
     text-align: center;
     line-height: 26px;
     color: #000000;
