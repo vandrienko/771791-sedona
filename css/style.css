@@ -17,23 +17,23 @@ body {
 
 }
 
-img {
-/*
-  max-width: 100%;
-  height: auto;
-*/
+a {
+    text-decoration: none;
 }
 
-.container-body{
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-body {
     width: 1200px;
     margin: 0 auto;
     background-color: red;    
 }
 
-a {
-    text-decoration: none;
-}
 
+/*Блок шапка*/
 .main-navigation {  
     padding: 0;
     margin: 0;    
@@ -41,19 +41,23 @@ a {
     padding-left: 72px;
     padding-right: 72px;
     position: relative;
-    
-   
+       
     min-height: 55px;    
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff; 
-    
-    
-/*
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-*/
+}
+
+.main-header-logo{
+    position: absolute;
+    left:50%;   
+    transform: translateX(-50%);    
+}
+
+.site-navigation {
+    list-style: none;    
+    font-weight: bold;
 }
 
 .main-navigation ul {
@@ -66,38 +70,20 @@ a {
     min-height: 55px; 
 }
 
-.main-header-logo{
-    position: absolute;
-    left:50%;   
-    transform: translateX(-50%);    
-}
-
-
-
-.site-navigation {
-    list-style: none;
-    
-    font-weight: bold;
-}
-
 .site-navigation li {
     flex-basis: 200px;
 }
 
-.site-navigation li:nth-child(1) {
-    
+.site-navigation li:nth-child(1) {    
     margin-right: 40px;
-    flex-grow: 0;
     text-align: left;
 }
 
 .site-navigation li:nth-child(2) {
-    flex-grow: 1;
     text-align: left;
 }
 
 .site-navigation li:nth-child(3) {
-    flex-grow: 1;
     text-align: right;
 }
 
@@ -122,6 +108,7 @@ a {
     color: rgba(0, 0, 0, 0.3);     
 }
 
+/*Блок маин*/
 .container {
     background-color: #ffffff;
 }
@@ -138,21 +125,21 @@ a {
     min-height: 495px;
 }
 
+.title-sedona-img {
+    display: block;
+    margin: 0 auto;
+}
+
 .features {
 /*    width:  1200px;*/
 }
+
 
 .slogan-features-con {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 38px;
-}
-
-.title-sedona-img {
-    display: block;
-/*   text-align: center; */
-     margin: 0 auto;
 }
 
 .slogan-sedona {
@@ -164,10 +151,10 @@ a {
     line-height: 26px;
     text-align: center;
     width: 500px;
-    margin-bottom: 12px;
-    
+    margin-bottom: 12px;    
 }
 
+/*Секция примуществ*/
 .features-sedona {
     line-height: 26px;
     text-align: center;
@@ -176,15 +163,20 @@ a {
 
 .features-item div {
     min-height: 256px;
-/*    width: 400px;*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+/*    justify-content: space-around;*/
+    align-items: center;
+/*    padding: 30px 40px;*/
+    
  }
 
 .features-item-container {
     display: flex;
-    
-/*     width: 1200px; */
-    justify-content: space-between ;
-    align-items: flex-start;
+    flex-direction: row;
+/*    justify-content: space-between;*/
+
 }
 
 .features-item p {
@@ -201,6 +193,10 @@ a {
     font-size: 21px;
     font-weight: bold; 
     color:  #000000;
+}
+
+.features-item span {
+   margin-top: 35px; 
 }
 
 
@@ -223,13 +219,22 @@ a {
 }
 
 .features-real-town {
+    
     color: #ffffff;
     background-color: #81b3d2;  
    
+   
+}
+
+.features-real-town span{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .features-real-town-img{
-   
+   display: flex;
+    flex-direction: row;
     
 }
 
