@@ -187,21 +187,28 @@ img {
  }
 
 .features-item .features-item-container {
-    width: 100%;
+   width: 1200px;
     display: flex;
     flex-direction: row;
     color: #ffffff;
-/*    justify-content: space-between;*/
+}
 
+.features-item .features-bridge {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
 }
 
 .features-item p {
 /*    width: 400px;*/
-    padding-right: 50px;
-    padding-left: 45px;
+/*    padding-right: 50px;*/
+/*    padding-left: 45px;*/
     align-items: center;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
     
+/*    margin-left: 50px;*/
+/*    margin-right: 50px;*/    
 }
 
 .features-item h3 {
@@ -219,8 +226,6 @@ img {
    margin-top: 35px; 
 }
 
-
-
 .features-bridge{
 /*    width: 1200px;    */
 }
@@ -230,7 +235,30 @@ img {
     color: #ffffff;
     background-color: #81b3d2;  
    
+}
+
+.features-bridge-info {
+    
+    color: #ffffff;
+    background-color: #81b3d2;  
    
+}
+
+.features-real-town h3{
+    color: #ffffff;
+}
+
+.features-bridge-info h3{
+    color: #ffffff;
+}
+
+.features-real-town p{
+/*
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+*/
 }
 
 .features-real-town span{
@@ -240,6 +268,17 @@ img {
 }
 
 .features-item .features-real-town-img{
+    width: 800px;
+    height: 256px;
+    color: #ffffff;
+/*   display: flex;*/
+/*    flex-direction: row;*/
+    
+}
+
+.features-item features-bridge-img{
+    width: 800px;
+    height: 400px;
     width: auto;
     height: auto;
     color: #ffffff;
@@ -247,7 +286,6 @@ img {
 /*    flex-direction: row;*/
     
 }
-
 
 .features-bridge {
     color: #ffffff;
@@ -258,58 +296,79 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    flex-basis: 400px;
+/*    flex-basis: 400px;*/
     display: flex;
     flex-wrap: wrap;
 /*    background-color: chartreuse;*/
-    align-items: center;
+/*    align-items: center;*/
 /*    width:  1200px;*/
 }
-
-.advice-item {
-   min-height: 330px; 
-    padding-top: 160px;
-   position: relative;
-    
-}
-
-
-
-.advice-item b::before{
-    content: "";
-    width: 75px;
-    height: 80px;  
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(../img/icon-2.svg);
-    background-size: 75px;
-    background-repeat: no-repeat;
-}
-
-
-
-.advice-item b { 
-    
-    margin-top: 160px;
-     padding-top: 160px;
-    font-size: 21px;
-    font-weight: bold;
-    color:  #000000;
-}
-
-.advice-item p {
-    width: 400px;
-}
-
-
-
 
 .features-area,
 .features-road,
 .features-tourists {
     background-color: #eeeeee;
+}
+
+/*______________Блок дополнительных рекомендаций___________*/
+.advice-item {
+        width: 400px;
+/*   min-height: 330px; */
+/*    padding-top: 160px;*/
+/*   position: relative;    */
+}
+.icon-home::before{
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+}
+.icon-food::before{
+    content: "";
+    width: 74px;
+    height: 70px;
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+}
+.icon-souvenir::before{
+    content: "";
+    width: 64px;
+    height: 76px;
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+}
+
+
+.advice-item b { 
+    position: relative; 
+    display: block;
+    padding-top: 160px;
+    font-size: 21px;
+    font-weight: bold;
+    color:  #000000;
+    margin: 0 auto;
+}
+
+.advice-item p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 85px;
+    padding-top: 23px;
+    margin-left: 47px;
+    margin-right: 47px;
 }
 
 .search-forms {
@@ -319,7 +378,7 @@ img {
     align-items: center;
     
 }
-
+/*________________Блок поиска_______________*/
 .search-forms b {
     display: block;
     
