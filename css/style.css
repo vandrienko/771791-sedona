@@ -33,14 +33,13 @@ img {
 }
 
 
-/*Блок шапка*/
+/*______________________________________Блок шапка_________________________________________*/
 .main-navigation {  
     padding: 0;
     margin: 0;     
 
     position: relative;
        
-
     font-size: 14px;
     line-height: 26px;
     color: #000000;
@@ -54,49 +53,6 @@ img {
     transform: translateX(-50%);    
 }
 
-/*_____________________________Вариант2__________________*/
-.site-navigation {
-    padding: 0;
-    margin: 0;
-    padding-left: 72px;
-    padding-right: 72px;
-    list-style: none;    
-    font-weight: bold;
-    display: flex;    
-    flex-wrap: wrap;
-}
-
-.site-navigation a {
-    display: block;
-    padding-left: 0;
-    padding-right: 35px;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    margin-right: 112px;
-    vertical-align: middle;    
-}
-
-.site-navigation .site-navigation-gallery a {
-    text-align: left;
-    padding-left: 0;
-    margin-right: 353px;
-}
-
-.site-navigation  .site-navigation-map a {
-    margin-right: 165px;
-    padding-right: 0;
-}
-
-.site-navigation  .site-navigation-hotels a {
-    margin-right: 0;
-    padding-right: 0;
-    text-align: right;
-}
-
-
-/*-----------Вариант-1-----------------------------*/
-
-/*
 .site-navigation {
     padding: 0;
     margin: 0;
@@ -105,7 +61,7 @@ img {
     list-style: none;    
     font-weight: bold;
     display: flex; 
-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .site-navigation li {
@@ -136,57 +92,7 @@ flex-wrap: wrap;
     padding-right: 0;
     text-align: right;
 }
-*/
 
-/*----------------------------------------------*/
-
-
-
-
-
-
-
-
-.main-navigation ul {
-/*
-    padding: 0;
-    margin: 0;
-*/
-    
-/*
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 55px; 
-*/
-}
-
-.site-navigation li {
-/*    flex-basis: 200px;*/
-}
-
-.site-navigation li:nth-child(1) {    
-/*
-    margin-right: 40px;
-    text-align: left;
-*/
-}
-
-.site-navigation li:nth-child(2) a {
-/*margin-right: 160px;*/
-}
-
-.site-navigation li:nth-child(3) {
-/*    text-align: right;*/
-}
-
-.site-navigation li:nth-child(4) {
-/*
-    flex-grow: 0;
-    margin-left: 40px;
-    text-align: right;
-*/
-}
 
 .site-navigation a {
     font-weight: bold;
@@ -203,7 +109,7 @@ flex-wrap: wrap;
     color: rgba(0, 0, 0, 0.3);     
 }
 
-/*_____________________Блок маин_________________________*/
+/*_______________________________________Блок маин________________________________________________*/
 .container {
     background-color: #ffffff;
 }
