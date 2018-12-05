@@ -45,10 +45,7 @@ img {
     line-height: 26px;
     color: #000000;
     background-color: #ffffff; 
-    
-/*    padding-left: 72px;*/
-/*    padding-right: 72px;*/
-/*    min-height: 55px;    */
+
 }
 
 .main-header-logo {
@@ -57,15 +54,16 @@ img {
     transform: translateX(-50%);    
 }
 
+/*_____________________________Вариант2__________________*/
 .site-navigation {
-     padding: 0;
+    padding: 0;
     margin: 0;
     padding-left: 72px;
     padding-right: 72px;
-/*    min-height: 56px;*/
     list-style: none;    
     font-weight: bold;
     display: flex;    
+    flex-wrap: wrap;
 }
 
 .site-navigation a {
@@ -75,9 +73,79 @@ img {
     padding-top: 16px;
     padding-bottom: 15px;
     margin-right: 112px;
-    vertical-align: middle;
-    
+    vertical-align: middle;    
 }
+
+.site-navigation .site-navigation-gallery a {
+    text-align: left;
+    padding-left: 0;
+    margin-right: 353px;
+}
+
+.site-navigation  .site-navigation-map a {
+    margin-right: 165px;
+    padding-right: 0;
+}
+
+.site-navigation  .site-navigation-hotels a {
+    margin-right: 0;
+    padding-right: 0;
+    text-align: right;
+}
+
+
+/*-----------Вариант-1-----------------------------*/
+
+/*
+.site-navigation {
+    padding: 0;
+    margin: 0;
+    padding-left: 72px;
+    padding-right: 72px;
+    list-style: none;    
+    font-weight: bold;
+    display: flex; 
+flex-wrap: wrap;
+}
+
+.site-navigation li {
+    width: 128px;
+    margin-right: 112px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+.site-navigation  .site-navigation-info{
+    text-align: left;
+    padding-left: 0;     
+}
+
+.site-navigation .site-navigation-gallery {
+    text-align: left;
+    padding-left: 0;
+    margin-right: 320px;
+}
+
+.site-navigation  .site-navigation-map {
+    padding-right: 0;
+    text-align: right;
+}
+
+.site-navigation  .site-navigation-hotels {
+    margin-right: 0;
+    padding-right: 0;
+    text-align: right;
+}
+*/
+
+/*----------------------------------------------*/
+
+
+
+
+
+
+
 
 .main-navigation ul {
 /*
@@ -104,8 +172,8 @@ img {
 */
 }
 
-.site-navigation li:nth-child(2) {
-/*    text-align: left;*/
+.site-navigation li:nth-child(2) a {
+/*margin-right: 160px;*/
 }
 
 .site-navigation li:nth-child(3) {
