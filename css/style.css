@@ -121,9 +121,11 @@ img {
 }
 
 .title-sedona h1 {
-  margin: 0; 
+    margin: 0; 
     padding-top: 76px;
-    min-height: 495px;
+    padding-bottom: 79px;
+   
+/*    min-height: 495px;*/
 }
 
 .title-sedona-img {
@@ -132,28 +134,31 @@ img {
 }
 
 .slogan-reasons-sedona {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 38px;
+    margin-bottom: 51px;
+
+    
 }
 
-.slogan-sedona {
+.slogan-sedona {    
     display: block;
-/*    margin-top: 100px;*/
+    width: 576px;
+    margin: 0 auto;
+    padding-top: 60px;
+    
     font-size: 21px;
     color: #000000;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
-    width: 500px;
-    margin-bottom: 12px;    
+    margin-bottom: 30px;    
 }
 
 .reasons-sedona {
-    line-height: 26px;
+    margin: 0 auto;
     text-align: center;
-    
+    line-height: 26px;
+   
+
 }
 
 /*______________Блок примуществ_______________*/
@@ -171,28 +176,29 @@ img {
     align-items: center;
 }
 
-
-
-.features-item div {
+.features-item  div {
     min-height: 256px;
     width: 400px;
     display: flex;
     flex-direction: column;
-/*    justify-content: space-around;*/
     align-items: center;
-/*    padding: 30px 40px;*/
+
     
  }
 
-.features-item-container {
+.features-item .features-item-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    color: #ffffff;
 /*    justify-content: space-between;*/
 
 }
 
 .features-item p {
 /*    width: 400px;*/
+    padding-right: 50px;
+    padding-left: 45px;
     align-items: center;
     margin: 0 auto;
     
@@ -201,7 +207,9 @@ img {
 .features-item h3 {
     margin: 0;
     padding: 0;   
-    padding-top: 47px;
+       padding-top: 48px;
+    padding-left: 95px;
+    padding-right: 95px;
     font-size: 21px;
     font-weight: bold; 
     color:  #000000;
@@ -226,14 +234,17 @@ img {
 }
 
 .features-real-town span{
-    margin: 40px;
+    margin: 26px;
     display: flex;
     flex-direction: row;
 }
 
-.features-real-town-img{
-   display: flex;
-    flex-direction: row;
+.features-item .features-real-town-img{
+    width: auto;
+    height: auto;
+    color: #ffffff;
+/*   display: flex;*/
+/*    flex-direction: row;*/
     
 }
 
