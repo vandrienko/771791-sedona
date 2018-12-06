@@ -260,9 +260,41 @@ img {
 }
 
 
-.features-bridge {
+/*Второй пункт блока примуществ*/
+.features-item .features-bridge {
     color: #ffffff;
-    background-color: #81b3d2;    
+    background-color: #81b3d2;  
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.features-item  .features-bridge-img {
+/*    height: 400px;*/
+    width: 800px;
+}
+
+.features-bridge-info h3{
+    color: #ffffff;
+/*    padding-left: 80px;*/
+/*    padding-right: 80px;*/
+ padding-top: 43px;
+    margin-left: 29px;
+    margin-right: 30px;
+}
+
+.features-bridge-info span{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.features-bridge-info p {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0px;
+        padding-left: 10px;
+    padding-right: 10px;
 }
 
 .advice-list {
