@@ -203,7 +203,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item p {  
-    padding-top: 7px;
+    padding-top: 10px;
     margin-left: 60px;
     margin-right: 60px;
     
@@ -442,60 +442,82 @@ input[type="radio"].visually-hidden {
 /*_______________Подвал_______________*/
 
 .main-footer {    
-    line-height: 26px;   
+    padding: 29px 73px;
+    
+    line-height: 26px;       
     
     background-color: #ffffff;  
 }
 
-.main-footer .container {
-    margin: 0 73px;
+.main-footer-container {
+/*    margin: 0 73px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 120px;    
+/*    min-height: 120px;    */
+    
 }
 
 .icon-visitsedona {
-    width: 240px;
-    
+    width: 200px;
+    padding-left: 26px;
+    padding-right: 10px;
     font-weight: bold;
     font-size: 21px;  
     color: #000000;
     text-align: center;
+    
+/*    background-color: chartreuse;*/
 }
 
 .social-button{
-    width: 400px;
-    
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 48px;
+
+/*    text-align: center;*/
     text-decoration: none;
     list-style: none;
-    color: #ffffff;
-    text-align: center; 
+    color: #ffffff;   
     
-    background-color: #81b3d2;       
+    background-color: #81b3d2;     
 }
 
 .social-list { 
     display: flex;
-    
-    text-align: center;
+    width: 151px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    text-align: center;*/
     list-style: none;  
+    margin: 0;
+    padding: 0;
     
 }
 
 .social-list li:not(:last-child) {
-    margin-right: 5px;
+/*    margin-right: 5px;*/
 }
 
 .footer-logo {   
-    width: 240px;
+    width: 200px;
+    padding-left: 12px;
+    padding-right: 25px;
+    padding-top: 4px ;
     
     text-align: center;
     line-height: 26px;
-    color: #000000;    
+    color: #000000;   
+    
+    background-color: chartreuse;
 }
 
+.footer-logo span {
+/*    display: block;*/
+    text-align: center;
+}
 
 .footer-logo-img path  {
     fill: #000000;
