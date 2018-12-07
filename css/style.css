@@ -243,7 +243,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features-real-town span{
-    margin: 21px;
+    margin-top: 21;
+    
     display: flex;
     flex-direction: row;
 }
@@ -291,7 +292,7 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
 }
 
-/*______________Блок дополнительных рекомендаций___________*/
+/*_________Блок дополнительных рекомендаций___________*/
 .advice-item {
     width: 400px;
 }
@@ -477,7 +478,6 @@ input[type="radio"].visually-hidden {
     width: 47px;
     height: 48px;
 
-/*    text-align: center;*/
     text-decoration: none;
     list-style: none;
     color: #ffffff;   
@@ -485,20 +485,29 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;     
 }
 
+.social-button:hover {
+    background-color: #669ec0;
+}
+
+.social-container:active path  {
+    fill: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
+.social-container:active a   {
+   fill: rgba(255, 255, 255, 0.3);
+   background-color: #5496bd;
+}
+
 .social-list { 
     display: flex;
     width: 151px;
     flex-wrap: wrap;
     justify-content: space-between;
-/*    text-align: center;*/
     list-style: none;  
     margin: 0;
     padding: 0;
     
-}
-
-.social-list li:not(:last-child) {
-/*    margin-right: 5px;*/
 }
 
 .footer-logo {   
@@ -511,13 +520,12 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     color: #000000;   
     
-    background-color: chartreuse;
 }
 
 .footer-logo span {
-/*    display: block;*/
     text-align: center;
 }
+
 
 .footer-logo-img path  {
     fill: #000000;
