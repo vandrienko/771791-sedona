@@ -722,7 +722,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*__________Вторая страница__________*/
-.site-navigation .site-navigation-active {
+.site-navigation-active a {
     color: #766357;
 }
 
