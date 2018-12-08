@@ -302,6 +302,7 @@ input[type="radio"].visually-hidden {
     top: 57px;
     left: 50%;
     
+    display: table;
     width: 75px;
     height: 72px;
     
@@ -315,6 +316,7 @@ input[type="radio"].visually-hidden {
     top: 57px;
     left: 50%;
     
+    display: table;
     width: 74px;
     height: 70px;
     
@@ -328,6 +330,7 @@ input[type="radio"].visually-hidden {
     top: 57px;
     left: 50%;
     
+    display: table;
     width: 64px;
     height: 76px;
     
@@ -340,7 +343,7 @@ input[type="radio"].visually-hidden {
 .advice-item b { 
     position: relative; 
     
-    display: block;
+    display: table;
     margin: 0 auto;
     padding-top: 160px;
     
@@ -359,6 +362,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-forms {
+     
     min-height: 290px;
     display: flex;
     flex-direction: column;
@@ -388,17 +392,195 @@ input[type="radio"].visually-hidden {
     text-align: center;  
 }
 
-.search-forms a {
+.search-forms a {    
     padding: 30px 140px; 
+   
     
 }
 
 .search-forms .button-open-search {
+    position: relative;
     font-size: 21px;
     line-height: 26px;   
     
     background-color: #766357;
 }
+
+/*______________Модальное окно поиска гостиницы ________*/
+.search {
+   position: absolute;
+    
+    left: 357px;
+    
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000; 
+    
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.search-container {
+/*     margin:  0 auto;  */
+   
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+  
+/*    left: 50px;*/
+    padding: 55px;
+    width: 457px;  
+/*    background-color: cadetblue;*/
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 266px;
+/*    align-items: stretch;*/
+}
+
+.search-form-item {
+    padding: 0;
+    margin: 0;
+}
+
+.search-form-item label{
+    margin-right: 14px;
+}
+
+.search-container-adult{
+    display: flex;
+    flex-direction: row;
+}
+
+.adult-add {
+    position: absolute;
+    top: auto;
+    left: 255px;
+}
+
+.adult-remove {
+    position: absolute;
+    top: auto;
+    left: 180px;
+}
+.adult-remove:hover line,
+.adult-add:hover line {
+   stroke: #000000;
+}
+
+.adult-remove:active line,
+.adult-add:active line {
+   stroke: #81b3d2;
+}
+
+.children-add {
+    position: absolute;
+    top: auto;
+    right: 68px;
+}
+
+.children-remove {
+    position: absolute;
+    top: auto;
+    right: 144px;
+}
+.children-remove:hover line,
+.children-add:hover line {
+   stroke: #000000;
+}
+
+.children-remove:active line,
+.children-add:active line {
+   stroke: #81b3d2;
+}
+
+.search-container-adult p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-form-arrival-calendar input{
+   position: relative;
+}
+
+.date-of-arrival-calendar path,
+.date-of-departure-calendar path {
+    fill: #cacaca;
+}
+
+.date-of-arrival-calendar {
+    position: absolute;
+    top: 65px;
+    right: 65px;
+}
+
+.date-of-departure-calendar {
+    position: absolute;
+    top: 133px;
+    right: 65px;        
+}
+
+.date-of-arrival-calendar:hover path,
+.date-of-departure-calendar:hover path{
+    fill: #000000;
+}
+
+.date-of-arrival-calendar:active path,
+.date-of-departure-calendar:active path{
+    fill: #81b3d2;
+}
+
+.search-container-adult .search-form-item  input {
+    margin-left: 27px;
+    margin-right: 38px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 114px;
+    text-align: center;
+}
+
+.search-form input,
+.search-form input::placeholder {
+    display: inline-block;
+    
+    width: 346px;
+    box-sizing: border-box;
+    height: 38px;
+    font-size: 14px; 
+    font: inherit;
+    color: #000000;
+    font-weight: bold;
+    
+    background-color: #f2f2f2; 
+    
+    border: none;
+}
+
+
+.search-form input:hover,
+.search-form input:hover::placeholder {
+    background-color: #ebebeb;     
+}
+
+.search-form input:focus,
+.search-form input:focus::placeholder {
+    border-color: #e5e5e5;
+    color: #000000;
+    
+    background-color: #ffffff; 
+}
+
+.search-form .button-search {
+    margin-top: 10px;
+    min-height: 58px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
 /*___________________Кнопки__________________*/
 .button {
     font-size: 14px;
@@ -538,45 +720,8 @@ input[type="radio"].visually-hidden {
 .footer-logo-img path:active {
     fill: #bdbbbc;
 }
-/*______________Модальное окно поиска гостиницы ________*/
-.search {
-    font-weight: bold;
-    line-height: 26px;
-    color: #000000; 
-    
-    background-color: rgba(255, 255, 255, 1);
-}
 
-.search-form input,
-.search-form input::placeholder {
-    font-size: 14px; 
-    font: inherit;
-    color: #000000;
-    font-weight: bold;
-    
-    background-color: #f2f2f2; 
-}
-
-
-.search-form input:hover,
-.search-form input:hover::placeholder {
-    background-color: #ebebeb;     
-}
-
-.search-form input:focus,
-.search-form input:focus::placeholder {
-    border-color: #e5e5e5;
-    color: #000000;
-    
-    background-color: #ffffff; 
-}
-
-.button-search {
-    font-size: 21px;
-    line-height: 26px;
-}
-
-/*__________Втарая форма__________*/
+/*__________Вторая страница__________*/
 .site-navigation .site-navigation-active {
     color: #766357;
 }
