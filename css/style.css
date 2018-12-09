@@ -128,6 +128,7 @@ input[type="radio"].visually-hidden {
 
 /*______________________Блок маин_______________________________*/
 .container {
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
@@ -149,15 +150,15 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-reasons-sedona {
-    margin-bottom: 51px;
+    margin-bottom: 49px;
 }
 
 .slogan-sedona {    
     display: block;
     width: 576px;
     margin: 0 auto;
-    margin-bottom: 30px;
-    padding-top: 60px;
+    margin-bottom: 29px;
+    padding-top: 59px;
     
     font-size: 21px;
     color: #000000;
@@ -182,41 +183,75 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     
     list-style: none;  
-    text-align: center;
+/*    text-align: center;*/
 }
 
-.features-item  div {
-    min-height: 256px;
-    width: 400px;
+.features-info {
+    
+    padding-top: 17px;
+    padding-bottom: 29px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    min-height: 150px;
+    width: 280px;
+/*
+    padding-top: 17px;
+    padding-bottom: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    min-height: 150px;
+    width: 300px;
+*/
+/*    background-color: cyan;*/
     display: flex;
     
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    
+        text-align: center;
  }
 
-.features-item .features-item-container {
-    width: 100%;
+ .features-item-container {
+    padding: 0;
+    margin: 0;
+/*     background-color: red;*/
+/*    width: 100%;*/
     display: flex;
-    flex-direction: row;
-    
-    color: #ffffff;
+/*    flex-direction: row;*/
+/*    height: 256px;*/
+/*    color: #ffffff;*/
+/*    background-color: darkorange;*/
+     
+      color: #ffffff;
+    background-color: #81b3d2;  
 }
 
 .features-item p {  
-    padding-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0;
+    padding: 0;
+/*    padding-top: 10px;*/
+/*    margin-left: 60px;*/
+/*    margin-right: 60px;*/
     
-    align-items: center;
+/*    align-items: center;*/
     
 }
 
-.features-item h3 {
+.features-info h3 {
     margin: 0;
     padding: 0;  
-    padding-top: 45px;
-    padding-left: 120px;
-    padding-right: 120px;
+/*    padding-top: 5px;*/
+    padding-left: 70px;
+    padding-right: 70px;
     
     font-size: 21px;
     font-weight: bold; 
@@ -224,12 +259,15 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item span {
-    margin-top: 23px; 
+/*    margin-top: 23px; */
 }
 
 .features-real-town {    
+/*
     color: #ffffff;
     background-color: #81b3d2;  
+*/
+   
 }
 
 .features-real-town h3{
@@ -237,51 +275,74 @@ input[type="radio"].visually-hidden {
 }
 
 .features-real-town p{
-    margin: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+/*    margin: 0;*/
+/*    padding-top: 24px;*/
+/*    padding-left: 50px;*/
+/*    padding-right: 50px;*/
 }
 
 .features-real-town span{
-    margin-top: 21;
+/*    margin-top: 21;*/
     
-    display: flex;
-    flex-direction: row;
+/*    display: flex;*/
+/*    flex-direction: row;*/
 }
 
-.features-item .features-real-town-img{
-    width: auto;
-    height: auto;
-    color: #ffffff;
+.features-real-town-img{
+     padding: 0;
+    margin: 0;
+    line-height: 0;
+    
+/*    display: flex;    */
+/*    width: 100%;*/
+
+    
+/*    width: auto;*/
+/*    height: auto;*/
+/*    color: #ffffff;*/
 }
 
 
 /*Второй пункт блока примуществ*/
-.features-item .features-bridge {
+.features-bridge {
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1200px;
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    width: 1200px;*/
     
     color: #ffffff;
     
     background-color: #81b3d2;  
 }
 
-.features-item  .features-bridge-img {
-    width: 800px;
+ .features-bridge-img {
+     padding: 0;
+    margin: 0;
+      line-height: 0;
+/*    width: 800px;*/
 }
 
 .features-bridge-info h3{
-    padding-top: 43px;
+padding-left: 62px;
+    padding-right: 67px;
     color: #ffffff;
+}
+
+.features-bridge-info p {
+/*    padding-left: 20px;*/
+/*    padding-right: 20px;*/
 }
 
 .advice-list {
     margin: 0;
     padding: 0;
+/*    background-color: red;*/
+    
+    
     display: flex;
-    flex-wrap: wrap;
+/*    flex-wrap: wrap;*/
     
     list-style: none;
 }
@@ -289,17 +350,67 @@ input[type="radio"].visually-hidden {
 .features-area,
 .features-road,
 .features-tourists {
-    background-color: #eeeeee;
+/*    background-color: #eeeeee;*/
 }
 
 /*_________Блок дополнительных рекомендаций___________*/
 .advice-item {
-    width: 400px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px;
+/*
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+*/
+    min-height: 200px;
+    width: 300px;
+/*    background-color: cyan;*/
+   
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+        text-align: center;
+    
+    
+/*    width: 400px;*/
+/*    background-color: darkkhaki;*/
 }
+
+.advice-item b { 
+    position: relative; 
+    
+/*    display: table;*/
+/*    margin: 0 auto;*/
+/*    padding-top: 160px;*/
+     padding-bottom: 25px;
+    
+    font-size: 21px;
+    font-weight: bold;
+    color:  #000000;
+}
+
+.advice-item p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 17px;
+/*    padding-top: 23px;*/
+/*    margin-left: 47px;*/
+/*    margin-right: 47px;*/
+}
+
+
 .icon-home::before{
     content: "";
     position: absolute;
-    top: 57px;
+/*    top: 57px;*/
+    bottom: 75px;
     left: 50%;
     
     display: table;
@@ -313,7 +424,7 @@ input[type="radio"].visually-hidden {
 .icon-food::before{
     content: "";
     position: absolute;
-    top: 57px;
+    bottom: 75px;
     left: 50%;
     
     display: table;
@@ -327,7 +438,7 @@ input[type="radio"].visually-hidden {
 .icon-souvenir::before{
     content: "";
     position: absolute;
-    top: 57px;
+    bottom: 75px;
     left: 50%;
     
     display: table;
@@ -339,26 +450,7 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
-.advice-item b { 
-    position: relative; 
-    
-    display: table;
-    margin: 0 auto;
-    padding-top: 160px;
-    
-    font-size: 21px;
-    font-weight: bold;
-    color:  #000000;
-}
 
-.advice-item p {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 85px;
-    padding-top: 23px;
-    margin-left: 47px;
-    margin-right: 47px;
-}
 
 .search-forms {
      
@@ -381,7 +473,7 @@ input[type="radio"].visually-hidden {
 .search-forms p {
     margin: 0;
     width: 399px;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 50px;
     display: flex;  
     flex-direction: column;
@@ -441,6 +533,12 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: row;
 }
+
+
+.button-adult-remove {
+    border: none;
+}
+
 
 .adult-add {
     position: absolute;
@@ -591,7 +689,8 @@ input[type="radio"].visually-hidden {
 .button:active {
     color: rgba(255, 255, 255, 0.3);
     
-    background-color: #5496bd;    
+    background-color: #5496bd;  
+    border: none;
 }
 
 .button-reserve {
@@ -610,7 +709,13 @@ input[type="radio"].visually-hidden {
 .button-reserve:active {
     color: rgba(255, 255, 255, 0.3);   
     
+    border: none;
     background-color: #503e33;
+}
+/*________________Карта_________________*/
+
+.map iframe{
+    border: none;
 }
 
 /*_______________Подвал_______________*/
@@ -661,6 +766,7 @@ input[type="radio"].visually-hidden {
 .social-container:active path  {
     fill: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+    border: none;
 }
 
 .social-container:active a   {
@@ -693,6 +799,9 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.footer-logo a {    
+    display: inline-block;
+}
 
 .footer-logo-img path  {
     fill: #000000;
