@@ -150,7 +150,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-reasons-sedona {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
 }
 
 .slogan-sedona {    
@@ -249,7 +249,7 @@ input[type="radio"].visually-hidden {
 .features-info h3 {
     margin: 0;
     padding: 0;  
-/*    padding-top: 5px;*/
+/*    padding-top: 1px;*/
     padding-left: 70px;
     padding-right: 70px;
     
@@ -399,7 +399,7 @@ padding-left: 62px;
 .advice-item p {
     margin: 0;
     padding: 0;
-    padding-bottom: 17px;
+    padding-bottom: 19px;
 /*    padding-top: 23px;*/
 /*    margin-left: 47px;*/
 /*    margin-right: 47px;*/
@@ -473,8 +473,8 @@ padding-left: 62px;
 .search-forms p {
     margin: 0;
     width: 399px;
-    margin-top: 22px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 48px;
     display: flex;  
     flex-direction: column;
     
@@ -517,40 +517,124 @@ padding-left: 62px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 266px;
+    min-height: 285px;
 }
+
+
+
+.search-form-item-arrival input {
+    margin-left: 9px;
+    padding-left: 10px;
+    margin-left: 19px;
+    padding-left: 14px;
+    
+}
+
+.search-form-item-departure input {
+     margin-left: 9px;
+    padding-left: 10px;
+      margin-left: 15px;
+    padding-left: 13px;
+}
+
 
 .search-form-item {
+    height: 38px;
     padding: 0;
     margin: 0;
+    
 }
 
-.search-form-item label{
-    margin-right: 14px;
+.search-form-item input {
+    height: 38px;
+    width: 346px;
+    border: none;
 }
 
 .search-container-adult{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
+.search-container-adult input {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.search-form-adult input {
+    margin-left: 32px;
+}
 
 .button-adult-remove {
+    padding: 0;
+    position: relative;
+    top: 13px;
+    left: 36px;
+    width: 38px;
+    height: 38px;
     border: none;
-}
-
-
-.adult-add {
-    position: absolute;
-    top: auto;
-    left: 255px;
+    background-color: #f2f2f2;
 }
 
 .adult-remove {
     position: absolute;
-    top: auto;
-    left: 180px;
+    top: 12px;
+    left: 13px;
+
 }
+
+.button-adult-add{
+    padding: 0;
+    position: relative;
+    top: 13px;
+    left: -3px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.adult-add {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.children-remove {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.button-children-remove {
+    padding: 0;
+    position: relative;
+    top: 13px;
+    left: 3px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.children-add{
+     position: absolute;
+     top: 12px;
+    left: 13px;
+}
+.button-children-add {
+  padding: 0;
+    position: relative;
+       top: 13px;
+    left: -3px;
+     width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
 .adult-remove:hover line,
 .adult-add:hover line {
    stroke: #000000;
@@ -561,17 +645,7 @@ padding-left: 62px;
    stroke: #81b3d2;
 }
 
-.children-add {
-    position: absolute;
-    top: auto;
-    right: 68px;
-}
 
-.children-remove {
-    position: absolute;
-    top: auto;
-    right: 144px;
-}
 .children-remove:hover line,
 .children-add:hover line {
    stroke: #000000;
@@ -580,17 +654,6 @@ padding-left: 62px;
 .children-remove:active line,
 .children-add:active line {
    stroke: #81b3d2;
-}
-
-.search-container-adult p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.search-form-arrival-calendar input {
-   position: relative;
 }
 
 .date-of-arrival-calendar path,
@@ -620,22 +683,11 @@ padding-left: 62px;
     fill: #81b3d2;
 }
 
-.search-container-adult .search-form-item  input {
-    margin-left: 27px;
-    margin-right: 38px;
-    padding-left: 14px;
-    padding-right: 14px;
-    width: 114px;
-    text-align: center;
-}
+
 
 .search-form input,
 .search-form input::placeholder {
-    display: inline-block;
-    
-    width: 346px;
     box-sizing: border-box;
-    height: 38px;
     font-size: 14px; 
     font: inherit;
     color: #000000;
@@ -661,10 +713,13 @@ padding-left: 62px;
 }
 
 .search-form .button-search {
-    margin-top: 10px;
+    border: none;
+    margin-top: 26px; 
+    margin-bottom: 0px;
     min-height: 58px;
     font-size: 21px;
     line-height: 26px;
+
 }
 
 /*___________________Кнопки__________________*/

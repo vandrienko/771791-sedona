@@ -134,9 +134,8 @@
           <section class="search">
                 <div class="search-container">
                 <h2 class="visually-hidden">Поиск гостиницы</h2> 
-                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post" >
-                        
-                        <p class="search-form-item search-form-arrival-calendar">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post" > 
+                        <p class="search-form-item search-form-item-arrival search-form-arrival-calendar">
                               <label for="date-of-arrival">Дата заезда:</label>
                               <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-of-arrival">
                               <a href="#" >
@@ -145,10 +144,8 @@
                                   <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                                 </svg>
                             </a>
-                        </p>  
-                        
-                      
-                        <p class="search-form-item">
+                        </p>                    
+                        <p class="search-form-item search-form-item-departure">
                             <label for="date-of-departure">Дата выезда:</label>
                             <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure">
                             <a href="#">
@@ -158,37 +155,37 @@
                                 </svg>
                             </a>
                         </p> 
-                      
                         <div class="search-container-adult">
-                        <p class="search-form-item">
-                              <label for="search-form-adult">Взрослые:</label>
+                        <p class="search-form-item search-form-adult">
+                             <label for="search-form-adult">Взрослые:</label>
+                             <button class="button-adult-remove">
+                                  <svg class="adult-remove" width="10" height="10">
+                                      <line x1="0" y1="5" x2="10" y2="5" stroke="#a9a9a9" stroke-width="3"/>
+                                  </svg>
+                              </button>
+                              <input id="search-form-adult" type="text" value="2" min="1">
                               <button class="button-adult-add">
                                   <svg class="adult-add" width="10" height="10">
                                       <line x1="0" y1="5" x2="10" y2="5" stroke="#a9a9a9" stroke-width="3"/>
                                       <line x1="5" y1="0" x2="5" y2="10" stroke="#a9a9a9" stroke-width="3"/>
                                   </svg> 
                               </button>
-                              <input id="search-form-adult" type="text" value="2" min="1">
-                              <button class="button-adult-remove">
-                                  <svg class="adult-remove" width="10" height="10">
+                              
+                        </p>
+                        <p class="search-form-item item-quantity">
+                              <label for="search-form-children">Дети:</label>
+                            <button class="button-children-remove">
+                                  <svg class="children-remove" width="10" height="10">
                                       <line x1="0" y1="5" x2="10" y2="5" stroke="#a9a9a9" stroke-width="3"/>
                                   </svg>
-                              </button>
-                        </p>
-                        <p class="search-form-item">
-                              <label for="search-form-children">Дети:</label>
+                              </button>                   
+                              <input class="search-form-children-input" id="search-form-children" type="text" value="0" min="0">
                               <button class="button-children-add">
                               <svg class="children-add" width="10" height="10">  
                                   <line x1="0" y1="5" x2="10" y2="5" stroke="#a9a9a9" stroke-width="3"/>
                                   <line x1="5" y1="0" x2="5" y2="10" stroke="#a9a9a9" stroke-width="3"/>
                               </svg>
                              </button>
-                              <input id="search-form-children" type="text" value="0" min="0">
-                             <button class="button-children-remove">
-                              <svg class="children-remove" width="10" height="10">   
-                                  <line x1="0" y1="5" x2="10" y2="5" stroke="#a9a9a9" stroke-width="3"/>
-                              </svg>
-                            </button>
                         </p>
                         </div>
                         <button class="button button-search" type="submit">Найти</button>   
