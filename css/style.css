@@ -61,6 +61,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
     position: absolute;
+/*    z-index: 2;*/
     left:50%;   
     
     transform: translateX(-50%);    
@@ -91,7 +92,8 @@ input[type="radio"].visually-hidden {
     text-align: left;
 }
 
-.site-navigation .site-navigation-gallery {
+/*.site-navigation:nth-child(2n):not(last-child) */
+.site-navigation .site-navigation-gallery{
     padding-left: 0;
     margin-right: 320px;
     
@@ -132,21 +134,28 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
-.title-sedona {
-    background-image: url("../img/title-background.jpg");
-    background-position: top top;
-    background-repeat: no-repeat;    
+.title-sedona {    
+    background:  url("../img/intro-mask.svg") bottom no-repeat,
+                 url("../img/title-background.jpg") top no-repeat;
 }
 
 .title-sedona h1 {
     margin: 0; 
     padding-top: 76px;
-    padding-bottom: 79px;
+    padding-bottom: 82px;
 }
 
 .title-sedona-img {
     display: block;
     margin: 0 auto;
+}
+
+.title-sedona svg {
+/*
+   position: absolute;
+    bottom: 0;
+*/
+    
 }
 
 .slogan-reasons-sedona {
@@ -158,7 +167,7 @@ input[type="radio"].visually-hidden {
     width: 576px;
     margin: 0 auto;
     margin-bottom: 29px;
-    padding-top: 59px;
+    padding-top: 57px;
     
     font-size: 21px;
     color: #000000;
@@ -497,8 +506,8 @@ padding-left: 62px;
 
 /*______________Модальное окно поиска гостиницы ________*/
 .search {
-   position: absolute;
-    
+    position: absolute;
+    z-index: 3;
     left: 357px;
     
     font-weight: bold;
@@ -768,19 +777,32 @@ padding-left: 62px;
     background-color: #503e33;
 }
 /*________________Карта_________________*/
+.map{
+    position: relative;
+}
 
 .map iframe{
     border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 /*_______________Подвал_______________*/
 
-.main-footer {    
-    padding: 29px 73px;
+.main-footer { 
+    position: relative;
+    z-index: 3;
+    margin-top: 474px;
+    padding: 31px 73px;
     
     line-height: 26px;       
     
-    background-color: #ffffff;  
+    background-color: rgba(255, 255, 255, 0.5);  
+}
+.main-footer.inner{
+    margin-top: 0px;
 }
 
 .main-footer-container {
