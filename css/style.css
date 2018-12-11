@@ -861,7 +861,12 @@ padding-left: 62px;
     padding: 0;
 }
 
-.footer-logo {   
+.footer-logo { 
+/*
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+*/
     width: 200px;
     padding-left: 12px;
     padding-right: 25px;
@@ -873,7 +878,12 @@ padding-left: 62px;
 }
 
 .footer-logo span {
-    text-align: center;
+/*    display: inline-block;*/
+/*    display: block;*/
+/*    vertical-align: middle;/*/
+/*    height: 20px;*/
+/*    margin: auto 0;*/
+/*    text-align: center;*/
 }
 
 .footer-logo a {    
