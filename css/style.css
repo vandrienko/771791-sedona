@@ -88,8 +88,8 @@ input[type="radio"].visually-hidden {
 .site-navigation li {
     width: 128px;
     margin-right: 112px;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 16px;
 }
 
 .site-navigation  .site-navigation-info{
@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
 /*.site-navigation:nth-child(2n):not(last-child) */
 .site-navigation .site-navigation-gallery{
     padding-left: 0;
-    margin-right: 320px;
+    margin-right: 317px;
     
     text-align: left;
 }
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
 .title-sedona h1 {
     margin: 0; 
     padding-top: 76px;
-    padding-bottom: 82px;
+    padding-bottom: 81px;
 }
 
 .title-sedona-img {
@@ -157,7 +157,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-reasons-sedona {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
 }
 
 .slogan-sedona {    
@@ -183,6 +183,11 @@ input[type="radio"].visually-hidden {
 
 /*______________Блок примуществ_______________*/
 
+.features {
+/*    padding-bottom: 10px;*/
+/*    margin-bottom: 10px;*/
+}
+
 .features-list {
     margin: 0;
     padding: 0;
@@ -191,6 +196,10 @@ input[type="radio"].visually-hidden {
     align-items: center;
     justify-content: center;
     list-style: none;  
+    
+    
+    padding-bottom: 10px;
+    
 
 }
 
@@ -219,7 +228,7 @@ input[type="radio"].visually-hidden {
 .features-info h3 {
     margin: 0;
     padding: 0px 120px;  
-    padding-top: 49px;
+    padding-top: 47px;
 /*    padding-left: 70px;*/
 /*    padding-right: 70px;*/
     
@@ -257,7 +266,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-real-town h3{
-/*    color: #ffffff;*/
+    color: #ffffff;
 }
 
 .features-real-town-img{
@@ -287,23 +296,34 @@ input[type="radio"].visually-hidden {
 
 
 .features-bridge-info h3{
-/*padding-left: 62px;*/
-/*    padding-right: 67px;*/
-/*    color: #ffffff;*/
+    padding-left: 124px;
+    padding-right: 125px;
+    color: #ffffff;
+}
+
+.features-bridge-info span {
+    padding-top: 23px;
 }
 
 .features-bridge-info p {
     padding: 0;
+    padding-left: 41px;
+    padding-right: 41px;
 /*    margin-left: 10px;*/
 /*    margin-right: 10px;*/
 }
 
+.features-tourists p {
+    padding-left: 75px;
+    padding-right: 75px;
+}
 
 
 .features-area,
 .features-road,
 .features-tourists {
-/*    background-color: #eeeeee;*/
+    padding-bottom: 57px;
+    background-color: #eeeeee;
 }
 
 /*_________Блок дополнительных рекомендаций___________*/
@@ -335,14 +355,14 @@ input[type="radio"].visually-hidden {
 
 .advice-item b {   
     position: relative;     
-    padding-bottom: 23px;    
+    padding-bottom: 25px;    
     font-size: 21px;
     font-weight: bold;
     color:  #000000;
 }
 
 .advice-item p {
-    margin: 0;
+    margin: -2px;
     padding: 0 55px;
     
 }
@@ -380,7 +400,7 @@ input[type="radio"].visually-hidden {
 .icon-souvenir::before{
     content: "";
     position: absolute;
-    bottom: 73px;
+    bottom: 75px;
     left: 50%;
     
     display: table;
@@ -396,7 +416,7 @@ input[type="radio"].visually-hidden {
 
 .search-forms {
      
-    min-height: 290px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,19 +424,25 @@ input[type="radio"].visually-hidden {
 /*________________Блок поиска_______________*/
 .search-forms b {
     display: block;
-    margin-top: 50px;
+    margin-top: 41px;
     
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
     color:  #000000;
+    
 }
 
 .search-forms p {
     margin: 0;
-    width: 399px;
+/*    width: 400px;*/
     margin-top: 25px;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0 10px;
+/*    padding-right: 10px;*/
+/*    padding-left: 10px;*/
     display: flex;  
     flex-direction: column;
     
@@ -525,14 +551,14 @@ search-form-children-input{
 }
 
 .item-quantity input {
-    margin-left: 30px;
+    margin-left: 29px;
 }
 
 .button-adult-remove {
     padding: 0;
     position: relative;
     top: 0px;
-    left: 41px;
+    left: 39px;
     width: 38px;
     height: 38px;
     border: none;
@@ -573,7 +599,7 @@ search-form-children-input{
     padding: 0;
     position: relative;
     top: 0px;
-    left: 30px;
+    left: 29px;
     width: 38px;
     height: 38px;
     border: none;
@@ -583,13 +609,13 @@ search-form-children-input{
 .children-add{
      position: absolute;
      top: 15px;
-    left: 16px;
+    left: 14px;
 }
 .button-children-add {
   padding: 0;
     position: relative;
        top: 0px;
-    left: -3px;
+    left: 0px;
      width: 38px;
     height: 38px;
     border: none;
@@ -838,7 +864,7 @@ search-form-children-input{
 }
 
 .footer-logo a {    
-    padding-top: 6px;
+    padding-top: 7px;
     padding-right: 3px;
     display: inline-block;
 }
@@ -907,7 +933,7 @@ search-form-children-input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 20px;    
+    margin-left: 30px;    
 }
 
 .hotels-list h3:hover {
