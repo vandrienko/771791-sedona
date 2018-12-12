@@ -157,7 +157,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-reasons-sedona {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 }
 
 .slogan-sedona {    
@@ -188,32 +188,58 @@ input[type="radio"].visually-hidden {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    
+    align-items: center;
+    justify-content: center;
     list-style: none;  
 
 }
 
-.features-info {
-    
-    padding-top: 17px;
-    padding-bottom: 29px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 20px;
+.features-info {    
+/*    padding-top: 17px;*/
+/*    padding-bottom: 29px;*/
+/*    padding-left: 40px;*/
+/*    padding-right: 40px;*/
+/*    margin-top: 30px;*/
+/*    margin-right: 20px;*/
+/*    margin-bottom: 30px;*/
+/*    margin-left: 20px;*/
+    padding: 0px 0px;
     min-height: 150px;
-    width: 280px;
+    width: 400px;
     
     display: flex;
     
     flex-direction: column;
-    justify-content: space-between;
+/*    justify-content: flex-end;*/
     align-items: center;
     
     text-align: center;
  }
+
+.features-info h3 {
+    margin: 0;
+    padding: 0px 120px;  
+    padding-top: 49px;
+/*    padding-left: 70px;*/
+/*    padding-right: 70px;*/
+    
+    font-size: 21px;
+    font-weight: bold; 
+    color:  #000000;
+}
+
+.features-info span {
+    padding-top: 25px;
+    padding-bottom: 21px;
+}
+
+.features-info p {
+    margin: 0;
+    padding: 0;
+    padding: 0 60px;
+/*    padding-left: 30px;*/
+/*    text-align: center;*/
+}
 
  .features-item-container {
     padding: 0;
@@ -224,25 +250,14 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item p {  
-    margin: 0;
-    padding: 0;
+/*    margin: 0;*/
+/*    padding: 0;*/
 
     
-}
-
-.features-info h3 {
-    margin: 0;
-    padding: 0;  
-    padding-left: 70px;
-    padding-right: 70px;
-    
-    font-size: 21px;
-    font-weight: bold; 
-    color:  #000000;
 }
 
 .features-real-town h3{
-    color: #ffffff;
+/*    color: #ffffff;*/
 }
 
 .features-real-town-img{
@@ -269,22 +284,29 @@ input[type="radio"].visually-hidden {
 /*    width: 800px;*/
 }
 
-.features-bridge-info.features-info p{
-    padding-left: 30px;
-}
+
 
 .features-bridge-info h3{
-padding-left: 62px;
-    padding-right: 67px;
-    color: #ffffff;
+/*padding-left: 62px;*/
+/*    padding-right: 67px;*/
+/*    color: #ffffff;*/
 }
 
 .features-bridge-info p {
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
 }
 
+
+
+.features-area,
+.features-road,
+.features-tourists {
+/*    background-color: #eeeeee;*/
+}
+
+/*_________Блок дополнительных рекомендаций___________*/
 .advice-list {
     margin: 0;
     padding: 0;    
@@ -294,40 +316,26 @@ padding-left: 62px;
     list-style: none;
 }
 
-.features-area,
-.features-road,
-.features-tourists {
-    background-color: #eeeeee;
-}
-
-/*_________Блок дополнительных рекомендаций___________*/
 .advice-item {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 30px;
-
-    min-height: 200px;
-    width: 300px;
+    padding-bottom: 85px;
+    
+    min-height: 245px;
+    width: 400px;
 
    
     display: flex;
-    
+
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     
-    text-align: center;
-    
+    text-align: center;  
 
 }
 
-.advice-item b { 
+.advice-item b {   
     position: relative;     
-
-    padding-bottom: 25px;
-    
+    padding-bottom: 23px;    
     font-size: 21px;
     font-weight: bold;
     color:  #000000;
@@ -335,8 +343,8 @@ padding-left: 62px;
 
 .advice-item p {
     margin: 0;
-    padding: 0;
-    padding-bottom: 19px;
+    padding: 0 55px;
+    
 }
 
 
@@ -372,7 +380,7 @@ padding-left: 62px;
 .icon-souvenir::before{
     content: "";
     position: absolute;
-    bottom: 75px;
+    bottom: 73px;
     left: 50%;
     
     display: table;
