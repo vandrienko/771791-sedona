@@ -67,7 +67,6 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
     position: absolute;
-/*    z-index: 2;*/
     left:50%;   
     
     transform: translateX(-50%);    
@@ -203,34 +202,21 @@ input[type="radio"].visually-hidden {
 
 }
 
-.features-info {    
-/*    padding-top: 17px;*/
-/*    padding-bottom: 29px;*/
-/*    padding-left: 40px;*/
-/*    padding-right: 40px;*/
-/*    margin-top: 30px;*/
-/*    margin-right: 20px;*/
-/*    margin-bottom: 30px;*/
-/*    margin-left: 20px;*/
+.features-info {   
+    display: flex;    
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    
     padding: 0px 0px;
     min-height: 150px;
     width: 400px;
-    
-    display: flex;
-    
-    flex-direction: column;
-/*    justify-content: flex-end;*/
-    align-items: center;
-    
-    text-align: center;
  }
 
 .features-info h3 {
     margin: 0;
     padding: 0px 120px;  
     padding-top: 47px;
-/*    padding-left: 70px;*/
-/*    padding-right: 70px;*/
     
     font-size: 21px;
     font-weight: bold; 
@@ -246,8 +232,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     padding: 0 60px;
-/*    padding-left: 30px;*/
-/*    text-align: center;*/
 }
 
  .features-item-container {
@@ -258,12 +242,6 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;  
 }
 
-.features-item p {  
-/*    margin: 0;*/
-/*    padding: 0;*/
-
-    
-}
 
 .features-real-town h3{
     color: #ffffff;
@@ -288,9 +266,9 @@ input[type="radio"].visually-hidden {
 
  .features-bridge-img {
      padding: 0;
-    margin: 0;
-      line-height: 0;
-/*    width: 800px;*/
+     margin: 0;
+     
+     line-height: 0;
 }
 
 
@@ -309,8 +287,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
     padding-left: 41px;
     padding-right: 41px;
-/*    margin-left: 10px;*/
-/*    margin-right: 10px;*/
 }
 
 .features-tourists p {
@@ -337,25 +313,24 @@ input[type="radio"].visually-hidden {
 }
 
 .advice-item {
-    padding-bottom: 85px;
-    
-    min-height: 245px;
-    width: 400px;
-
-   
     display: flex;
-
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     
+    padding-bottom: 85px;
+    
+    min-height: 245px;
+    width: 400px;
+    
     text-align: center;  
-
 }
 
 .advice-item b {   
-    position: relative;     
-    padding-bottom: 25px;    
+    position: relative;   
+    
+    padding-bottom: 25px;  
+    
     font-size: 21px;
     font-weight: bold;
     color:  #000000;
@@ -363,15 +338,13 @@ input[type="radio"].visually-hidden {
 
 .advice-item p {
     margin: -2px;
-    padding: 0 55px;
-    
+    padding: 0 55px;    
 }
 
 
 .icon-home::before{
     content: "";
     position: absolute;
-/*    top: 57px;*/
     bottom: 75px;
     left: 50%;
     
@@ -412,13 +385,12 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
-
-
-.search-forms {
-     
-    min-height: 280px;
+.search-forms {   
     display: flex;
     flex-direction: column;
+    
+    min-height: 280px;
+   
     align-items: center;
 }
 /*________________Блок поиска_______________*/
@@ -434,20 +406,19 @@ input[type="radio"].visually-hidden {
 }
 
 .search-forms p {
+    display: flex;  
+    flex-direction: column;
+    align-items: center; 
+    
     margin: 0;
-/*    width: 400px;*/
     margin-top: 25px;
     margin-bottom: 46px;
     margin-right: 10px;
     margin-left: 10px;
     padding: 0 10px;
-/*    padding-right: 10px;*/
-/*    padding-left: 10px;*/
-    display: flex;  
-    flex-direction: column;
-    
+
     line-height: 24px;          
-    align-items: center;    
+     
     text-align: center;  
 }
 
@@ -457,7 +428,8 @@ input[type="radio"].visually-hidden {
 
 .search-forms .button-open-search {
     position: relative;
-    font-size: 21px;
+    
+    font-size: 21px;    
     line-height: 26px;   
     
     background-color: #766357;
@@ -485,6 +457,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     min-height: 285px;
 }
 
@@ -495,7 +468,6 @@ input[type="radio"].visually-hidden {
     padding-left: 10px;
     margin-left: 19px;
     padding-left: 14px;
-    
 }
 
 .search-form-item-departure input {
@@ -505,12 +477,10 @@ input[type="radio"].visually-hidden {
     padding-left: 13px;
 }
 
-
 .search-form-item {
     height: 38px;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 .search-form-item input {
@@ -569,7 +539,6 @@ search-form-children-input{
     position: absolute;
     top: 15px;
     left: 12px;
-
 }
 
 .button-adult-add{
@@ -607,16 +576,16 @@ search-form-children-input{
 }
 
 .children-add{
-     position: absolute;
-     top: 15px;
+    position: absolute;
+    top: 15px;
     left: 14px;
 }
 .button-children-add {
-  padding: 0;
+    padding: 0;
     position: relative;
-       top: 0px;
+    top: 0px;
     left: 0px;
-     width: 38px;
+    width: 38px;
     height: 38px;
     border: none;
     background-color: #f2f2f2;
@@ -624,23 +593,23 @@ search-form-children-input{
 
 .adult-remove:hover line,
 .adult-add:hover line {
-   stroke: #000000;
+    stroke: #000000;
 }
 
 .adult-remove:active line,
 .adult-add:active line {
-   stroke: #81b3d2;
+    stroke: #81b3d2;
 }
 
 
 .children-remove:hover line,
 .children-add:hover line {
-   stroke: #000000;
+    stroke: #000000;
 }
 
 .children-remove:active line,
 .children-add:active line {
-   stroke: #81b3d2;
+    stroke: #81b3d2;
 }
 
 .date-of-arrival-calendar path,
@@ -720,7 +689,7 @@ search-form-children-input{
     
     background-color: #81b3d2;
     
-    padding: 5px 10px;
+    padding: 3px 16px;
     
 }
 
@@ -804,6 +773,7 @@ search-form-children-input{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     width: 47px;
     height: 48px;
 
@@ -830,13 +800,15 @@ search-form-children-input{
 }
 
 .social-list { 
-    display: flex;
-    width: 151px;
+    display: flex;  
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;  
+    
+    width: 151px;
     margin: 0;
     padding: 0;
+    
+    list-style: none;
 }
 
 .footer-logo { 
@@ -847,26 +819,19 @@ search-form-children-input{
     width: 200px;
     padding-left: 12px;
     padding-right: 25px;
-/*    padding-top: 4px ;*/
+
     
     text-align: center;
     line-height: 26px;
     color: #000000;    
 }
 
-.footer-logo span {
-/*    display: inline-block;*/
-/*    display: block;*/
-/*    vertical-align: middle;/*/
-/*    height: 20px;*/
-/*    margin: auto 0;*/
-/*    text-align: center;*/
-}
-
-.footer-logo a {    
+.footer-logo a {
+    display: inline-block;
+    
     padding-top: 7px;
     padding-right: 3px;
-    display: inline-block;
+    
 }
 
 .footer-logo-img path  {
@@ -891,7 +856,8 @@ search-form-children-input{
 }
 
 .sorting-form{
-    height: 307px;
+    height: 283px;
+    border-bottom: 1px solid #cacaca;
 }
 
 .sorting-form p {
@@ -900,33 +866,29 @@ search-form-children-input{
     font-weight: bold;
 }
 
-.hotels-list {
+.hotels-list {    
     margin: 0; 
     padding: 0;
 }
 
 
-.hotels-item {   
-    width: 1128px;
-    justify-content: space-between;
+.hotels-item {  
     display: flex;  
+    justify-content: space-between;
     
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 29px 72px;
+    border-bottom: 1px solid #cacaca;
     
     list-style: none;
 }
 
 .hotels-info {
-    margin-left: 72px ;
     display: flex;
-    flex-direction: row;
 }
 
 .hotels-info .container {
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .hotels-container {
@@ -934,6 +896,9 @@ search-form-children-input{
     flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;    
+}
+.hotels-info img {
+    line-height: 0;
 }
 
 .hotels-list h3:hover {
@@ -956,13 +921,21 @@ search-form-children-input{
 
 .hotels-detailed {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    margin-right: 10px;
+    
+    min-height: 60px;    
+    margin-right: 8px;
+    
 }
 
 .hotels-reserve {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    
+    min-height: 60px;
+    
 }
 
 .sorting-header {
