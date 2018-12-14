@@ -757,7 +757,7 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.5);  
 }
 .main-footer.inner{
-    margin-top: 0px;
+    margin-top: 3px;
 }
 
 .main-footer-container {
@@ -883,7 +883,8 @@ input[type="radio"].visually-hidden {
 .hotels-item {  
     display: flex;  
     justify-content: space-between;
-    
+    padding: 0;
+    margin: 0px;
     padding: 29px 72px;
     border-bottom: 1px solid #cacaca;
     
@@ -892,6 +893,7 @@ input[type="radio"].visually-hidden {
 
 .hotels-info {
     display: flex;
+    justify-content: space-between;
 }
 
 .hotels-info .container {
@@ -903,11 +905,38 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 30px;    
+    margin-left: 30px;   
+    /* min-height: 150px;  */
 }
+/* .hotels-container h3{
+margin: -6px 0 0;
+} */
 .hotels-info img {
     line-height: 0;
 }
+
+.star-container {
+    display: flex;
+    justify-content: flex-end;
+
+  text-align: right;
+}
+
+.star::before {
+    content: "";
+
+    margin-left: 6px;
+    
+    display: table;
+    width: 18px;
+    height: 18px;
+
+    background-image: url(../img/star.svg);
+    background-repeat: no-repeat;
+  
+    
+}
+
 
 .hotels-list h3:hover {
     color: #81b3d2;
@@ -920,7 +949,9 @@ input[type="radio"].visually-hidden {
 .hotels-list h3 {
     margin: 0;
     padding: 0;
-    
+    margin: -3px 0 0;
+    padding-bottom: 8px;
+
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -987,10 +1018,155 @@ input[type="radio"].visually-hidden {
 }
 
 .rating {
-    color: #666666;  
-    text-align: right;
-    
+    min-height: 27px;
+    color: #666666;    
+    padding-right: 15px;
+    padding-left: 15px;
+
     background-color: #f2f2f2;
+}
+
+.rating span {
+    display: block;
+    margin-top: 3px;
+    /* vertical-align: middle;     */
+    /* text-align: center; */
+}
+
+/* Фильтр */
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 
