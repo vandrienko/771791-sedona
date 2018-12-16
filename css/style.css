@@ -183,10 +183,11 @@ input[type="radio"].visually-hidden {
 
 /*______________Блок примуществ_______________*/
 
-/* .features { */
-/*    padding-bottom: 10px;*/
-/*    margin-bottom: 10px;*/
-/* } */
+.features { 
+   /* padding-bottom: 10px; */
+   /* margin-bottom: 10px; */
+   /* margin-bottom: 10px; */
+} 
 
 .features-list {
     margin: 0;
@@ -198,7 +199,7 @@ input[type="radio"].visually-hidden {
     list-style: none;  
     
     
-    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
     
 
 }
@@ -400,7 +401,7 @@ input[type="radio"].visually-hidden {
 /*________________Блок поиска_______________*/
 .search-forms b {
     display: block;
-    margin-top: 41px;
+    margin-top: 51px;
     
     font-size: 30px;
     font-weight: bold;
