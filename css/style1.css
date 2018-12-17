@@ -297,7 +297,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-tourists p {
-   
+    
     padding-left: 75px;
     padding-right: 75px;
 }
@@ -425,6 +425,7 @@ input[type="radio"].visually-hidden {
     margin-right: 10px;
     margin-left: 10px;
     padding: 0 10px;
+    width: 457px;
 
     line-height: 24px;          
      
@@ -491,7 +492,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form-item {
-    width: 457px;
     height: 38px;
     padding: 0;
     margin: 0;    
@@ -502,10 +502,6 @@ input[type="radio"].visually-hidden {
     /* width: 346px; */
     border: none;
     text-transform: uppercase;
-}
-
-.search-form-item a {
-position: relative;
 }
 
 .search-container-adult{
@@ -637,14 +633,14 @@ position: relative;
 
 .date-of-arrival-calendar {
     position: absolute;
-    top: 0px;
-    right: 5px;
+    top: 65px;
+    right: 65px;
 }
 
 .date-of-departure-calendar {
     position: absolute;
-    top: 0px;
-    right: 5px;        
+    top: 133px;
+    right: 65px;        
 }
 
 .date-of-arrival-calendar:hover path,
