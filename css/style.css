@@ -297,11 +297,10 @@ input[type="radio"].visually-hidden {
 }
 
 .features-tourists p {
-   
+    width: 255px;
     padding-left: 75px;
     padding-right: 75px;
 }
-
 
 .features-area,
 .features-road,
@@ -477,14 +476,15 @@ input[type="radio"].visually-hidden {
 
 
 .search-form-item-arrival input {
-    margin-left: 9px;
-    padding-left: 10px;
+    /* position: relative; */
+    /* margin-left: 9px; */
+    padding-right: 35px;
     margin-left: 19px;
     padding-left: 14px;
 }
 
 .search-form-item-departure input {
-    margin-left: 9px;
+    /* margin-left: 9px; */
     padding-left: 10px;
     margin-left: 15px;
     padding-left: 13px;
@@ -498,14 +498,27 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form-item input {
+    position: relative;
     height: 38px;
-    /* width: 346px; */
+    width: 346px;
     border: none;
     text-transform: uppercase;
 }
 
+.date-of-arrival-calendar {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.date-of-departure-calendar {
+    position: absolute;
+    top: 0px;
+    right: 5px;        
+}
+
 .search-form-item a {
-position: relative;
+/* position: relative; */
 }
 
 .search-container-adult{
@@ -533,6 +546,10 @@ position: relative;
     margin-left: 20px;
 } */
 
+.search-form-item-arrival input {
+    /* box-sizing: border-box; */
+    /* width: 346px; */
+}
 .item-quantity {
     width: 180px;
     margin-left: 5px
@@ -552,6 +569,8 @@ position: relative;
     border: none;
     background-color: #f2f2f2;
 }
+
+
 
 .adult-remove {
     position: absolute;
@@ -635,17 +654,7 @@ position: relative;
     fill: #cacaca;
 }
 
-.date-of-arrival-calendar {
-    position: absolute;
-    top: 0px;
-    right: 5px;
-}
 
-.date-of-departure-calendar {
-    position: absolute;
-    top: 0px;
-    right: 5px;        
-}
 
 .date-of-arrival-calendar:hover path,
 .date-of-departure-calendar:hover path {
