@@ -1,9 +1,8 @@
-body {
-    width: 100%;
-    /* width: 1280px; */
+body {    
     margin: 0;
     padding: 0;
-    
+    width: 100%;   
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -182,13 +181,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*______________Блок примуществ_______________*/
-
-.features { 
-   /* padding-bottom: 10px; */
-   /* margin-bottom: 10px; */
-   /* margin-bottom: 10px; */
-} 
-
 .features-list {
     margin: 0;
     padding: 0;
@@ -197,11 +189,6 @@ input[type="radio"].visually-hidden {
     align-items: center;
     justify-content: center;
     list-style: none;  
-    
-    
-    /* margin-bottom: 10px; */
-    
-
 }
 
 .features-info {   
@@ -217,7 +204,6 @@ input[type="radio"].visually-hidden {
 
 .features-info h3 {
     margin: 0;
-    /* padding: 0px 120px;   */
     width: 151px;
     padding-top: 47px;
     
@@ -278,10 +264,6 @@ input[type="radio"].visually-hidden {
 
 
 .features-bridge-info h3{
-    
-    /* padding-left: 0px; */
-    /* padding-right: 0px; */
-    /* width: 151px; */
     color: #ffffff;
 }
 
@@ -297,11 +279,10 @@ input[type="radio"].visually-hidden {
 }
 
 .features-tourists p {
-    
+    width: 255px;
     padding-left: 75px;
     padding-right: 75px;
 }
-
 
 .features-area,
 .features-road,
@@ -425,7 +406,6 @@ input[type="radio"].visually-hidden {
     margin-right: 10px;
     margin-left: 10px;
     padding: 0 10px;
-    width: 457px;
 
     line-height: 24px;          
      
@@ -475,23 +455,8 @@ input[type="radio"].visually-hidden {
     min-height: 285px;
 }
 
-
-
-.search-form-item-arrival input {
-    margin-left: 9px;
-    padding-left: 10px;
-    margin-left: 19px;
-    padding-left: 14px;
-}
-
-.search-form-item-departure input {
-    margin-left: 9px;
-    padding-left: 10px;
-    margin-left: 15px;
-    padding-left: 13px;
-}
-
 .search-form-item {
+    display: inline-block;
     height: 38px;
     padding: 0;
     margin: 0;    
@@ -499,9 +464,55 @@ input[type="radio"].visually-hidden {
 
 .search-form-item input {
     height: 38px;
-    /* width: 346px; */
+    width: 294px;
     border: none;
     text-transform: uppercase;
+  
+      
+}
+.search-form-item-arrival,
+.search-form-item-departure {
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+.search-form-item-arrival input { 
+    display: flex;  
+
+    width: 346px;
+    margin-right: -23px;
+    padding-left: 14px;
+
+}
+
+.search-form-item-arrival label,
+.search-form-item-departure label {
+    display: inline-block;
+
+    vertical-align: bottom;
+    padding-top: 6px;
+}
+
+.date-of-arrival-calendar {
+    position: absolute;
+    top: 6px;
+    right: 11px;   
+}
+
+.search-form-item-departure input {
+    display: flex;
+   
+    width: 346px;
+    margin-right: -23px;
+    padding-left: 13px;
+}
+
+.date-of-departure-calendar {
+    position: absolute;
+    top: 6px;
+    right: 11px;        
 }
 
 .search-container-adult{
@@ -509,7 +520,9 @@ input[type="radio"].visually-hidden {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 29px;
 }
+
 .search-container-adult p {
     display: flex;    
     align-items: center;
@@ -524,10 +537,6 @@ input[type="radio"].visually-hidden {
 .search-form-adult input {
     margin-left: 39px;
 }
-
-/* search-form-children-input{
-    margin-left: 20px;
-} */
 
 .item-quantity {
     width: 180px;
@@ -556,8 +565,9 @@ input[type="radio"].visually-hidden {
 }
 
 .button-adult-add{
-    padding: 0;
     position: relative;
+
+    padding: 0;   
     top: 0px;
     left: 0px;
     width: 38px;
@@ -631,17 +641,7 @@ input[type="radio"].visually-hidden {
     fill: #cacaca;
 }
 
-.date-of-arrival-calendar {
-    position: absolute;
-    top: 65px;
-    right: 65px;
-}
 
-.date-of-departure-calendar {
-    position: absolute;
-    top: 133px;
-    right: 65px;        
-}
 
 .date-of-arrival-calendar:hover path,
 .date-of-departure-calendar:hover path {
@@ -657,6 +657,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input,
 .search-form input::placeholder {
+    padding-top: 4px;
     box-sizing: border-box;
     font-size: 14px; 
     font: inherit;
@@ -885,7 +886,6 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
-
 .hotels-item {  
     display: flex;  
     justify-content: space-between;
@@ -911,12 +911,9 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 30px;   
-    /* min-height: 150px;  */
+    margin-left: 30px;    
 }
-/* .hotels-container h3{
-margin: -6px 0 0;
-} */
+
 .hotels-info img {
     line-height: 0;
 }
@@ -939,10 +936,7 @@ margin: -6px 0 0;
 
     background-image: url(../img/star.svg);
     background-repeat: no-repeat;
-  
-    
 }
-
 
 .hotels-list h3:hover {
     color: #81b3d2;
@@ -1034,9 +1028,7 @@ margin: -6px 0 0;
 
 .rating span {
     display: block;
-    margin-top: 3px;
-    /* vertical-align: middle;     */
-    /* text-align: center; */
+    margin-top: 3px; 
 }
 
 /* Фильтр */
@@ -1174,10 +1166,3 @@ margin: -6px 0 0;
 
   background: #ffffff;
 }
-
-
-
-
-
-
-
