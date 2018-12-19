@@ -137,7 +137,7 @@
                             <form class="search-form" action="https://echo.htmlacademy.ru" method="post" > 
                                 <p class="search-form-item search-form-item-arrival search-form-arrival-calendar">
                                     <label for="date-of-arrival">Дата заезда:</label>
-                                    <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-of-arrival">
+                                    <input id="date-of-arrival" type="text" placeholder="24 апреля 2017"  name="date-arrival">
                                     <a href="#" aria-label="Открытие календаря">
                                         <svg class="date-of-arrival-calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                                         <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -147,7 +147,7 @@
                                 </p>                    
                                 <p class="search-form-item search-form-item-departure">
                                     <label for="date-of-departure">Дата выезда:</label>
-                                    <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-of-departure">
+                                    <input id="date-of-departure" type="text" placeholder="4 июля 2017"  name="date-departure">
                                     <a href="#" aria-label="Открытие календаря">
                                         <svg class="date-of-departure-calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                                             <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
@@ -238,5 +238,44 @@
                 </div>
             </footer>  
         </div>
+        <script>
+            var link_search = document.querySelector(".button-open-search");     
+            var form_search = document.querySelector(".search");                
+            var form = document.querySelector(".search-form");  
+           //11-Поработаем над улучшением формы входа. Сделаем так, чтобы при открытии формы фокус автоматически устанавливался в поле ввода логина. Для этого в первую очередь найдём это поле
+            var date_arrival = form.querySelector("[name=date-arrival]");  
+            //15-Будем проверять все поля ввода в форме, поэтому найдём второе поле.
+             var date_departure = form.querySelector("[name=date-departure]");
+            var buttons = document.querySelector(".button-search");
+console.log(date_arrival);
+console.log(date_departure);
+            link_search.addEventListener("click", function (evt) {
+                evt.preventDefault(),form_search.classList.toggle("modal-show");                
+              });  
+
+            // buttons.addEventListener("submit", function (evt) {
+            // (!date-arrival.value || !date-departure.value)
+            // evt.preventDefault();
+            // console.log("Кнопка");                    
+            // });
+ 
+form.addEventListener("submit", function (evt) {
+    if (!date_arrival.value || !date_departure.value) {   //16-Отменим отправку формы, если какое-то из полей незаполнено.
+      console.log(date_arrival);
+      evt.preventDefault();
+      console.log("Пусто");
+    //   popup.classList.remove("modal-error"); //28-Уберём этот класс при закрытии формы
+    //   popup.offsetWidth = popup.offsetWidth; //30- Добавим небольшой хак, чтобы анимация ошибки отрабатывала несколько раз, если форма не валидна
+      form.classList.add("modal-error"); //27- Если форма не валидна, добавим модальному окну класс ошибки.
+    } else {
+        console.log("Есть значение");
+    //   if (isStorageSupport) { //19-Обернём запись в хранилище в условие.
+        // localStorage.setItem("login", login.value); //17-А в случае правильно заполненной формы запишем логин пользователя в локальное хранилище.
+      }
+    
+  });
+
+        </script>
   </body>
 </html>
+
