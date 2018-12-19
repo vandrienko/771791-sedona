@@ -241,39 +241,23 @@
         <script>
             var link_search = document.querySelector(".button-open-search");     
             var form_search = document.querySelector(".search");                
-            var form = document.querySelector(".search-form");  
-           //11-Поработаем над улучшением формы входа. Сделаем так, чтобы при открытии формы фокус автоматически устанавливался в поле ввода логина. Для этого в первую очередь найдём это поле
-            var date_arrival = form.querySelector("[name=date-arrival]");  
-            //15-Будем проверять все поля ввода в форме, поэтому найдём второе поле.
-             var date_departure = form.querySelector("[name=date-departure]");
+            var form = document.querySelector(".search-form");             
+            var date_arrival = form.querySelector("[name=date-arrival]");           
+            var date_departure = form.querySelector("[name=date-departure]");
             var buttons = document.querySelector(".button-search");
-console.log(date_arrival);
-console.log(date_departure);
+
             link_search.addEventListener("click", function (evt) {
                 evt.preventDefault(),form_search.classList.toggle("modal-show");                
               });  
 
-            // buttons.addEventListener("submit", function (evt) {
-            // (!date-arrival.value || !date-departure.value)
-            // evt.preventDefault();
-            // console.log("Кнопка");                    
-            // });
- 
-form.addEventListener("submit", function (evt) {
-    if (!date_arrival.value || !date_departure.value) {   //16-Отменим отправку формы, если какое-то из полей незаполнено.
-      console.log(date_arrival);
-      evt.preventDefault();
-      console.log("Пусто");
-    //   popup.classList.remove("modal-error"); //28-Уберём этот класс при закрытии формы
-    //   popup.offsetWidth = popup.offsetWidth; //30- Добавим небольшой хак, чтобы анимация ошибки отрабатывала несколько раз, если форма не валидна
-      form.classList.add("modal-error"); //27- Если форма не валидна, добавим модальному окну класс ошибки.
-    } else {
-        console.log("Есть значение");
-    //   if (isStorageSupport) { //19-Обернём запись в хранилище в условие.
-        // localStorage.setItem("login", login.value); //17-А в случае правильно заполненной формы запишем логин пользователя в локальное хранилище.
-      }
-    
-  });
+            form.addEventListener("submit", function (evt) {
+                if (!date_arrival.value || !date_departure.value) {   
+                evt.preventDefault();               
+                form.classList.remove("modal-error");
+                form.offsetWidth = form.offsetWidth; 
+                form.classList.add("modal-error");
+                }  
+            });
 
         </script>
   </body>

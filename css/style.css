@@ -500,21 +500,25 @@ input[type="radio"].visually-hidden {
 }
 .modal-show {
     display: block;
+    z-index: 5;
     animation: bounce 0.6s; 
   }
 
-  /* 23-Добавим анимацию для открытия модального окна. Сначала описываем анимацию. */
+  .modal-error {
+    animation: shake 0.6s;
+  }
+
   @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      transform: translateY(2000px);
     }
   
     70% {
-      transform: translateY(30px);
+      transform: translateY(-30px);
     }
   
     90% {
-      transform: translateY(-10px);
+      transform: translateY(20px);
     }
   
     100% {
@@ -522,7 +526,6 @@ input[type="radio"].visually-hidden {
     }
   }
   
-  /* 25-Добавим анимацию для тряски формы в случае ошибки. */
   @keyframes shake {
     0%,
     100% {
@@ -548,7 +551,7 @@ input[type="radio"].visually-hidden {
 
 .search-container {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
 
     left: 50%;
     -webkit-transform: translateX(-50%);
