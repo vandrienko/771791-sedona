@@ -1134,11 +1134,13 @@ input[type="radio"].visually-hidden {
 .filters{
     /* display: none; */
     display: flex;    
-    background-color: #88bdee;
+    background: #547a92 url("../img/filter-background.jpg")   no-repeat;
+    background-size: cover;
     padding-top: 26px;
     padding-bottom: 33px;
     padding-right: 72px;
     padding-left: 72px;
+    color: #ffffff;
 }
 
 .filter-container{
@@ -1164,7 +1166,7 @@ input[type="radio"].visually-hidden {
   .filter-range-title {
     margin-bottom: 12px;
   
-    font-weight: 600;
+    font-weight: bold;
     font-size: 16px;
     line-height: 21px;
   }
@@ -1185,6 +1187,9 @@ input[type="radio"].visually-hidden {
   .filter-column h3 {
     margin: 0;
     padding: 0;
+    
+    font-size: 16px;
+    font-weight: bold;
   }
 
 .filter-list {
@@ -1195,8 +1200,32 @@ input[type="radio"].visually-hidden {
 
 .filter-list li {
     margin-top: 25px;
-    padding-left: 41px;
+    /* padding-left: 41px; */
 }
+
+.filter-list label {
+    position: relative;
+
+    padding-left: 41px;
+
+    cursor: pointer;
+}
+
+.filter-list label:hover,
+.filter-list label:focus {
+  color: #661515;
+}
+
+.filter-item input[type="checkbox"] + .filter-item label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 17px;
+    height: 17px;
+  
+    border: 2px solid #000000;
+  }
 
 .price-controls {
     position: relative;
