@@ -32,10 +32,12 @@
         </header>
         <main class="container">
             <h1 class="visually-hidden">Поиск жилья в аренду</h1>
+    <!-- СекцияФильтр шаблонов -->
             <section class="filters ">
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
                 <form class="filter" method="post" action="https://echo.htmlacademy.ru"  
                     oninput="куда.value=откуда.value">
+                    <div class="filter-container">
                     <fieldset>
                         <h3>Инфраструктура:</h3>
                         <ul>
@@ -82,16 +84,8 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <!-- <fieldset>
-                        <h3>Стоимость в сутки (Р):</h3>   
-                        <label class="min-cost" for="min-cost-label">от</label>                      
-                        <input type="text" id="min-cost-label" name="min-cost" value="0">
-                        <label class="max-cost"  for="max-cost-label">до</label> 
-                        <input type="text" id="max-cost-label" name="max-cost" value="3000">
-                        <input type="button" name="range-min" value="Ползунок стоимости от">
-                        <input type="button" name="range-max" value="Ползунок стоимости до">  
-                    </fieldset>  -->
-                    <!-- <div class="filter-range">
+                    </div>                   
+                    <div class="filter-range">
                             <div class="filter-range-title">Стоимость в сутки (р):</div>
                             <div class="price-controls">
                               <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -105,8 +99,7 @@
                               <div class="range-toggle range-toggle-max"></div>
                             </div>
                             <button class="btn-transparent" type="submit">Показать</button>
-                          </div> 
-                    <button class="filter-button" type="submit">Показать</button>                    -->
+                    </div>                        
                 </form>
             </section>
             

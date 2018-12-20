@@ -243,11 +243,11 @@
             var form_search = document.querySelector(".search");                
             var form = document.querySelector(".search-form");             
             var date_arrival = form.querySelector("[name=date-arrival]");           
-            var date_departure = form.querySelector("[name=date-departure]");
-            var buttons = document.querySelector(".button-search");
+            var date_departure = form.querySelector("[name=date-departure]");            
 
             link_search.addEventListener("click", function (evt) {
-                evt.preventDefault(),form_search.classList.toggle("modal-show");                
+                evt.preventDefault();
+                form_search.classList.toggle("modal-show");                
               });  
 
             form.addEventListener("submit", function (evt) {

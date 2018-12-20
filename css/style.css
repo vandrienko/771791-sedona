@@ -1132,11 +1132,48 @@ input[type="radio"].visually-hidden {
 }
 
 .filters{
-    display: none;
+    /* display: none; */
+    display: flex;    
+    background-color: #88bdee;
+    padding-top: 26px;
+    padding-bottom: 30px;
+    padding-right: 72px;
+    padding-left: 72px;
 }
 
+.filter-container{
+    display: flex;   
+}
+
+.filter{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+/* Фильтр */
+.filter-range {
+    width: 330px;
+    /* margin: 50px auto; */
+  
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .filter-range-title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+
 .sorting-form{
-    height: 283px;
+    /* height: 283px; */
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #cacaca;
 }
 
@@ -1288,6 +1325,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
+    display: flex;
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
@@ -1334,22 +1372,6 @@ input[type="radio"].visually-hidden {
     margin-top: 3px; 
 }
 
-/* Фильтр */
-.filter-range {
-  width: 330px;
-  margin: 50px auto; /* для демо */
-
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.filter-range-title {
-  margin-bottom: 9px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-}
 
 .price-controls {
   position: relative;
