@@ -35,14 +35,14 @@
                 <div class="title-sedona">
                     <h1> 
                         <span class="visually-hidden">
-                            Седона &#8211; рай для отдыхающих посреди аризонской пустыни.
+                            Седона &#8212; рай для отдыхающих посреди аризонской пустыни.
                         </span>
                         <img class="title-sedona-img" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">  
                     </h1>    
                 </div>
                 <div class="slogan-reasons-sedona">
                     <b class="slogan-sedona">
-                        Седона &#8211; небольшой городок в Аризоне, заслуживающий большего! 
+                        Седона &#8212; небольшой городок в Аризоне, заслуживающий большего! 
                     </b>  
                     <p class="reasons-sedona">
                         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -55,9 +55,9 @@
                             <div class="features-item-container">
                             <div class="features-real-town features-info">
                                 <h3>Настоящий городок</h3>                     
-                                <span>&#8211;&#8470;1&#8211;</span>
+                                <span>&#8212; &#8470;1 &#8212;</span>
                                 <p>
-                                    Седона &#8211; не аттракцион для туристов, там течёт своя жизнь
+                                    Седона &#8212; не аттракцион для туристов, там течёт своя жизнь
                                 </p>
                             </div>
                             <div class="features-real-town-img">
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="features-bridge-info features-info"> 
                                     <h3>Там есть <br> Мост дьявола</h3>
-                                    <span>&#8211;&#8470;2&#8211;</span>
+                                    <span>&#8212; &#8470;2 &#8212;</span>
                                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                                 </div>
                             </div>   
@@ -94,7 +94,7 @@
                         <li class="features-item">                    
                             <div class="features-area features-info">
                                 <h3>Небольшая площадь</h3>
-                                <span>&#8211;&#8470;3&#8211;</span>
+                                <span>&#8212; &#8470;3 &#8212;</span>
                                 <p>
                                     Все достопримечательности находятся очень близко
                                 </p>
@@ -103,7 +103,7 @@
                         <li class="features-item">
                             <div class="features-road features-info">
                                 <h3>Красивая дорога</h3>
-                                <span>&#8211;&#8470;4&#8211;</span>
+                                <span>&#8212; &#8470;4 &#8212;</span>
                                 <p>
                                     Ехать в Седону из Лас&#8211;Вегаса совсем не скучно!
                                 </p>
@@ -112,7 +112,7 @@
                         <li class="features-item">
                             <div class="features-tourists features-info">
                                 <h3>Мало туристов</h3>
-                                <span>&#8211;&#8470;5&#8211;</span>
+                                <span>&#8212; &#8470;5 &#8212;</span>
                                 <p>
                                     Большинство едет в гранд каньон и толпится там
                                 </p>
@@ -238,28 +238,7 @@
                 </div>
             </footer>  
         </div>
-        <script>
-            var link_search = document.querySelector(".button-open-search");     
-            var form_search = document.querySelector(".search");                
-            var form = document.querySelector(".search-form");             
-            var date_arrival = form.querySelector("[name=date-arrival]");           
-            var date_departure = form.querySelector("[name=date-departure]");            
-
-            link_search.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                form_search.classList.toggle("modal-show");  
-                form.classList.remove("modal-error");              
-              });  
-
-            form.addEventListener("submit", function (evt) {
-                if (!date_arrival.value || !date_departure.value) {   
-                evt.preventDefault();               
-                form.classList.remove("modal-error");
-                form.offsetWidth = form.offsetWidth; 
-                form.classList.add("modal-error");
-                }  
-            });
-        </script>
+        <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
 
