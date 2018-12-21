@@ -25,6 +25,8 @@ img {
 .container-body {
     width: 1200px;
     margin: 0 auto;
+
+    box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1003,8 +1005,10 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
     
     padding: 3px 16px;
-    
+    padding-right: 18px;
 }
+
+
 
 .button:hover {    
     background-color: #669ec0;
@@ -1062,7 +1066,7 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.5);  
 }
 .main-footer.inner{
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .main-footer-container {
@@ -1195,7 +1199,7 @@ input[type="radio"].visually-hidden {
     background: #547a92 url("../img/filter-background.jpg")   no-repeat;
     background-size: cover;
     padding-top: 26px;
-    padding-bottom: 33px;
+    padding-bottom: 32px;
     padding-right: 72px;
     padding-left: 72px;
     color: #ffffff;
@@ -1220,7 +1224,7 @@ input[type="radio"].visually-hidden {
 
 /* Фильтр */
 .filter-range {
-    width: 317px;
+    width: 318px;
     /* margin: 50px auto; */
   
     color: #ffffff;
@@ -1228,7 +1232,7 @@ input[type="radio"].visually-hidden {
   }
   
   .filter-range-title {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   
     font-weight: bold;
     font-size: 16px;
@@ -1239,7 +1243,7 @@ input[type="radio"].visually-hidden {
 .filter-column {
     padding: 0;
     margin: 0;
-    margin-right: 117px;
+    margin-right: 119px;
     border: none;
     
 
@@ -1284,7 +1288,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    left: 2px;
+    left: 0px;
     top: 0;
 
     width: 26px;
@@ -1300,7 +1304,7 @@ input[type="radio"].visually-hidden {
     content: "";
   
     position: absolute;
-    left: 2px;
+    left: 0px;
     top: 0;
 
     width: 26px;
@@ -1326,7 +1330,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
     position: relative;
     
-    height: 31px;
+    height: 32px;
     margin-bottom: 20px;
   
     font-size: 0;
@@ -1429,7 +1433,7 @@ input[type="radio"].visually-hidden {
   .btn-transparent {
     display: block;
     margin: 0;
-    margin-left: 84px;
+    margin-left: 85px;
     padding-top: 5px;
     padding-bottom: 6px;
     padding-right: 34px;
@@ -1454,7 +1458,9 @@ input[type="radio"].visually-hidden {
   }
 
 .sorting-form{
-    padding: 29px 72px;
+    position: relative;
+    padding: 30px 72px;
+    padding-bottom: 29px;
     /* height: 283px; */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1467,6 +1473,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-form p {
     margin: 0;
+    margin-right: 48px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -1529,6 +1536,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-info img {
+    padding-top: 2px;
     line-height: 0;
 }
 
@@ -1589,7 +1597,7 @@ input[type="radio"].visually-hidden {
             flex-direction: column;
     
     min-height: 60px;    
-    margin-right: 8px;
+    margin-right: 6px;
     
 }
 
@@ -1617,6 +1625,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
+    /* position: relative; */
+    /* width: 73%; */
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1626,12 +1636,48 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     list-style: none;    
 }
-
+.sorting-item {
+    margin-right: 33px;
+}
 .sorting-item a {
     color: #000000;
 }
 
-.sorting-list li:nth-child(1) a {
+.sorting-decrease a {
+    margin: 0;
+    position: absolute;
+    top: -5px;
+    right: 41px;
+    width: 0px;
+    height: 10px;
+    border: 5.5px solid transparent;
+    border-bottom: 10px solid #cacaca;
+    overflow: hidden;
+    /* margin-left: 300px; */
+}
+.sorting-increase a {
+    margin: 0;
+    position: absolute;
+    top: 9px;
+    right: 19px;
+    width: 0px;
+    height: 10px;
+    border: 5.5px solid transparent;
+    border-top: 10px solid #cacaca;
+    overflow: hidden;
+    
+}
+
+.sorting-increase a {
+    border-top-color: #81b3d2; 
+}
+
+.sorting-list-right {
+    position: absolute;
+    right: 55px;
+}
+
+.sorting-list li:nth-child(1) {
     color: #81b3d2;
 }
 .sorting-list li:nth-child(2) a,
@@ -1656,7 +1702,7 @@ input[type="radio"].visually-hidden {
 .rating {
     min-height: 27px;
     color: #666666;    
-    padding-right: 15px;
+    padding-right: 13px;
     padding-left: 15px;
 
     background-color: #f2f2f2;
