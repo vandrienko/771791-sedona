@@ -501,35 +501,64 @@ input[type="radio"].visually-hidden {
 .modal-show {
     display: block;
     z-index: 5;
-    animation: bounce 0.6s; 
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s; 
   }
 
   .modal-error {
-    animation: shake 0.6s;
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translateY(2000px);
+              transform: translateY(2000px);
+    }
+  
+    70% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 
   @keyframes bounce {
     0% {
-      transform: translateY(2000px);
+      -webkit-transform: translateY(2000px);
+              transform: translateY(2000px);
     }
   
     70% {
-      transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
     }
   
     90% {
-      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
     }
   
     100% {
-      transform: translateY(0);
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
   }
   
-  @keyframes shake {
+  @-webkit-keyframes shake {
     0%,
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
   
     10%,
@@ -537,14 +566,41 @@ input[type="radio"].visually-hidden {
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+  }
+  
+  @keyframes shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
     }
   }
 
@@ -1133,6 +1189,8 @@ input[type="radio"].visually-hidden {
 
 .filters{
     /* display: none; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
     background: #547a92 url("../img/filter-background.jpg")   no-repeat;
     background-size: cover;
@@ -1144,14 +1202,20 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;   
 }
 
 .filter{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     /* flex-direction: column; */
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /* Фильтр */
@@ -1198,25 +1262,57 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.filter-list li {
+.filter-option {
     margin-top: 25px;
     /* padding-left: 41px; */
 }
 
-.filter-list label {
+.filter-option  label {
     position: relative;
 
+    display: block;
     padding-left: 41px;
 
     cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;  
 }
 
-.filter-list label:hover,
-.filter-list label:focus {
-  color: #661515;
-}
+.filter-input-checkbox + label::before {
+    content: "";
 
-.filter-item input[type="checkbox"] + .filter-item label {
+    position: absolute;
+    left: 2px;
+    top: 0;
+
+    width: 26px;
+    height: 23px;
+    
+    /* background-color: green; */
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .filter-input-checkbox:checked + label::after {
+    content: "";
+  
+    position: absolute;
+    left: 2px;
+    top: 0;
+
+    width: 26px;
+    height: 23px;
+    
+    /* background-color: green; */
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+/* .filter-item input[type="checkbox"] + .filter-item label {
     position: absolute;
     top: 0;
     left: 0;
@@ -1225,7 +1321,7 @@ input[type="radio"].visually-hidden {
     height: 17px;
   
     border: 2px solid #000000;
-  }
+  } */
 
 .price-controls {
     position: relative;
@@ -1257,9 +1353,10 @@ input[type="radio"].visually-hidden {
   .price-controls label {
     display: inline-block;
   
+    padding-top: 5px;
+
     font-size: 14px;
-    line-height: 31px;
-    vertical-align: top;
+    line-height: 21px;    
   
     cursor: pointer;
   }
@@ -1359,8 +1456,12 @@ input[type="radio"].visually-hidden {
 .sorting-form{
     padding: 29px 72px;
     /* height: 283px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     border-bottom: 1px solid #cacaca;
 }
 
@@ -1517,6 +1618,8 @@ input[type="radio"].visually-hidden {
 
 .sorting-list {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 12px;
     line-height: 18px;
@@ -1563,4 +1666,3 @@ input[type="radio"].visually-hidden {
     display: block;
     margin-top: 3px; 
 }
-
