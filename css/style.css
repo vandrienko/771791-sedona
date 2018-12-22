@@ -1,11 +1,11 @@
-body {    
+body {  
+    width: 100%;  
     margin: 0;
-    padding: 0;
-    width: 100%;   
+    padding: 0;       
 
-    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: normal;
     color: #333333;    
     text-transform: uppercase;
@@ -27,7 +27,6 @@ img {
     margin: 0 auto;
 
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
-
             box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);
 }
 
@@ -43,11 +42,9 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
           clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+            clip: rect(0 0 0 0);
   overflow: hidden;
 }
 /*_____________________Блок шапка___________________________*/
@@ -57,9 +54,9 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {  
     position: relative;
-    
-    padding: 0;
-    margin: 0;     
+
+    margin: 0;
+    padding: 0;         
 
     font-size: 14px;
     line-height: 26px;
@@ -69,27 +66,23 @@ input[type="radio"].visually-hidden {
 
 }
 
-
-
 .main-header-logo {
     position: absolute;
     left:50%;   
     
-    -webkit-transform: translateX(-50%);   
-    
-        -ms-transform: translateX(-50%);   
-    
+    -webkit-transform: translateX(-50%);     
+        -ms-transform: translateX(-50%);       
             transform: translateX(-50%);    
 }
 
-.site-navigation {
-    padding: 0;
-    margin: 0;
+.site-navigation {    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
     -ms-flex-wrap: wrap; 
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;  
     padding-left: 72px;
     padding-right: 72px;
     
@@ -110,10 +103,9 @@ input[type="radio"].visually-hidden {
     text-align: left;
 }
 
-/*.site-navigation:nth-child(2n):not(last-child) */
 .site-navigation .site-navigation-gallery{
-    padding-left: 0;
     margin-right: 317px;
+    padding-left: 0;    
     
     text-align: left;
 }
@@ -131,10 +123,10 @@ input[type="radio"].visually-hidden {
     text-align: right;
 }
 
-
 .site-navigation a {
     font-weight: bold;
     color: #000000;
+
     background-color: #ffffff;
 }
 
@@ -149,12 +141,13 @@ input[type="radio"].visually-hidden {
 /*______________________Блок маин_______________________________*/
 .container {
     margin: 0 auto;
+
     background-color: #ffffff;
 }
 
 .title-sedona {    
-    background:  url("../img/intro-mask.svg") bottom no-repeat,
-                 url("../img/title-background.jpg") top no-repeat;
+    background: url("../img/intro-mask.svg") bottom no-repeat,
+                url("../img/title-background.jpg") top no-repeat;
 }
 
 .title-sedona h1 {
@@ -164,7 +157,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-sedona-img {
-    display: block;
+    display: block;    
     margin: 0 auto;
 }
 
@@ -180,10 +173,10 @@ input[type="radio"].visually-hidden {
     padding-top: 57px;
     
     font-size: 21px;
-    color: #000000;
-    font-weight: bold;
-    line-height: 26px;
+    line-height: 26px;    
+    font-weight: bold;    
     text-align: center;
+    
 }
 
 .reasons-sedona {
@@ -197,6 +190,7 @@ input[type="radio"].visually-hidden {
 .features-list {
     margin: 0;
     padding: 0;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -211,7 +205,9 @@ input[type="radio"].visually-hidden {
     list-style: none;  
 }
 
-.features-info {   
+.features-info { 
+    padding: 0px 0px;
+
     display: -webkit-box;   
     display: -ms-flexbox;   
     display: flex;    
@@ -224,7 +220,6 @@ input[type="radio"].visually-hidden {
             align-items: center;    
     text-align: center;
     
-    padding: 0px 0px;
     min-height: 150px;
     width: 400px;
  }
@@ -275,8 +270,9 @@ input[type="radio"].visually-hidden {
 
 /*Второй пункт блока примуществ*/
 .features-bridge {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -327,19 +323,17 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;    
     
-    display: -webkit-box;    
-    
-    display: -ms-flexbox;    
-    
-    display: flex;
+    display: -webkit-box;        
+        display: -ms-flexbox;    
+            display: flex;
     
     list-style: none;
 }
 
 .advice-item {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+        display: -ms-flexbox;
+            display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -386,10 +380,8 @@ input[type="radio"].visually-hidden {
     width: 75px;
     height: 72px;
     
-    -webkit-transform: translateX(-50%);
-    
-        -ms-transform: translateX(-50%);
-    
+    -webkit-transform: translateX(-50%);    
+        -ms-transform: translateX(-50%);    
             transform: translateX(-50%);
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
@@ -404,10 +396,8 @@ input[type="radio"].visually-hidden {
     width: 74px;
     height: 70px;
     
-    -webkit-transform: translateX(-50%);
-    
-        -ms-transform: translateX(-50%);
-    
+    -webkit-transform: translateX(-50%);    
+        -ms-transform: translateX(-50%);    
             transform: translateX(-50%);
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
@@ -422,10 +412,8 @@ input[type="radio"].visually-hidden {
     width: 64px;
     height: 76px;
     
-    -webkit-transform: translateX(-50%);
-    
-        -ms-transform: translateX(-50%);
-    
+    -webkit-transform: translateX(-50%);    
+        -ms-transform: translateX(-50%);    
             transform: translateX(-50%);
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
@@ -433,13 +421,12 @@ input[type="radio"].visually-hidden {
 
 .search-forms {   
     display: -webkit-box;   
-    display: -ms-flexbox;   
-    display: flex;
+        display: -ms-flexbox;   
+            display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    
+            flex-direction: column;    
     min-height: 280px;
    
     -webkit-box-align: center;
@@ -462,8 +449,8 @@ input[type="radio"].visually-hidden {
 
 .search-forms p {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;  
+        display: -ms-flexbox;
+            display: flex;  
     -webkit-box-orient: vertical;  
     -webkit-box-direction: normal;  
         -ms-flex-direction: column;  
@@ -500,6 +487,7 @@ input[type="radio"].visually-hidden {
 /*______________Модальное окно поиска гостиницы ________*/
 .search {
     position: relative;
+
     display: none;
 }
 .modal-show {
@@ -518,18 +506,15 @@ input[type="radio"].visually-hidden {
     0% {
       -webkit-transform: translateY(2000px);
               transform: translateY(2000px);
-    }
-  
+    }  
     70% {
       -webkit-transform: translateY(-30px);
               transform: translateY(-30px);
-    }
-  
+    }  
     90% {
       -webkit-transform: translateY(20px);
               transform: translateY(20px);
-    }
-  
+    }  
     100% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
@@ -540,18 +525,15 @@ input[type="radio"].visually-hidden {
     0% {
       -webkit-transform: translateY(2000px);
               transform: translateY(2000px);
-    }
-  
+    }  
     70% {
       -webkit-transform: translateY(-30px);
               transform: translateY(-30px);
-    }
-  
+    }  
     90% {
       -webkit-transform: translateY(20px);
               transform: translateY(20px);
-    }
-  
+    }  
     100% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
@@ -563,8 +545,7 @@ input[type="radio"].visually-hidden {
     100% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
-    }
-  
+    }  
     10%,
     30%,
     50%,
@@ -572,8 +553,7 @@ input[type="radio"].visually-hidden {
     90% {
       -webkit-transform: translateX(-10px);
               transform: translateX(-10px);
-    }
-  
+    }  
     20%,
     40%,
     60%,
@@ -588,8 +568,7 @@ input[type="radio"].visually-hidden {
     100% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
-    }
-  
+    }  
     10%,
     30%,
     50%,
@@ -597,8 +576,7 @@ input[type="radio"].visually-hidden {
     90% {
       -webkit-transform: translateX(-10px);
               transform: translateX(-10px);
-    }
-  
+    }  
     20%,
     40%,
     60%,
@@ -612,7 +590,6 @@ input[type="radio"].visually-hidden {
 .search-container {
     position: absolute;
     z-index: 5;
-
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -643,31 +620,28 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form-item {
-    display: inline-block;
+    margin: 0;  
+    padding: 0;    
     height: 38px;
-    padding: 0;
-    margin: 0;    
 }
 
 .search-form-item input {
     height: 38px;
     width: 294px;
-    border: none;
+
     text-transform: uppercase;
-  
-      
+
+    border: none;
 }
 .search-form-item-arrival,
 .search-form-item-departure {
     position: relative;
+
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
+        display: -ms-flexbox;
+            display: flex;
     -webkit-box-pack: justify;
-
         -ms-flex-pack: justify;
-
             justify-content: space-between;
     margin-bottom: 29px;
 }
@@ -684,9 +658,6 @@ input[type="radio"].visually-hidden {
 
 .search-form-item-arrival label,
 .search-form-item-departure label {
-    display: inline-block;
-
-    vertical-align: bottom;
     padding-top: 6px;
 }
 
@@ -731,8 +702,8 @@ input[type="radio"].visually-hidden {
 
 .search-container-adult p {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;    
+        display: -ms-flexbox;
+            display: flex;    
     -webkit-box-align: center;    
         -ms-flex-align: center;    
             align-items: center;
@@ -741,6 +712,7 @@ input[type="radio"].visually-hidden {
 .search-container-adult input {
     width: 38px;
     height: 38px;
+
     text-align: center;
 }
 
@@ -759,12 +731,15 @@ input[type="radio"].visually-hidden {
 
 .button-adult-remove {
     padding: 0;
+
     position: relative;
     top: 0px;
     left: 39px;
+
     width: 38px;
     height: 38px;
     border: none;
+
     background-color: #f2f2f2;
 }
 
@@ -775,14 +750,16 @@ input[type="radio"].visually-hidden {
 }
 
 .button-adult-add{
-    position: relative;
+    padding: 0; 
 
-    padding: 0;   
+    position: relative;
     top: 0px;
-    left: 0px;
+    left: 0px;      
+    
     width: 38px;
     height: 38px;
     border: none;
+
     background-color: #f2f2f2;
 }
 
@@ -798,11 +775,12 @@ input[type="radio"].visually-hidden {
     left: 14px;
 }
 
-.button-children-remove {
-    padding: 0;
+.button-children-remove {  
     position: relative;
     top: 0px;
     left: 29px;
+
+    padding: 0;
     width: 38px;
     height: 38px;
     border: none;
@@ -814,14 +792,16 @@ input[type="radio"].visually-hidden {
     top: 15px;
     left: 14px;
 }
-.button-children-add {
-    padding: 0;
+.button-children-add {    
     position: relative;
     top: 0px;
     left: 0px;
+
+    padding: 0;
     width: 38px;
     height: 38px;
     border: none;
+
     background-color: #f2f2f2;
 }
 
@@ -834,7 +814,6 @@ input[type="radio"].visually-hidden {
 .adult-add:active line {
     stroke: #81b3d2;
 }
-
 
 .children-remove:hover line,
 .children-add:hover line {
@@ -851,8 +830,6 @@ input[type="radio"].visually-hidden {
     fill: #cacaca;
 }
 
-
-
 .date-of-arrival-calendar:hover path,
 .date-of-departure-calendar:hover path {
     fill: #000000;
@@ -862,8 +839,6 @@ input[type="radio"].visually-hidden {
 .date-of-departure-calendar:active path {
     fill: #81b3d2;
 }
-
-
 
 .search-form input,
 .search-form input::-webkit-input-placeholder {
@@ -880,12 +855,11 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-
-
 .search-form input,
 .search-form input:-ms-input-placeholder {
     padding-top: 4px;
     box-sizing: border-box;
+
     font-size: 14px; 
     font: inherit;
     color: #000000;
@@ -895,13 +869,12 @@ input[type="radio"].visually-hidden {
     
     border: none;
 }
-
-
 
 .search-form input,
 .search-form input::-ms-input-placeholder {
     padding-top: 4px;
     box-sizing: border-box;
+
     font-size: 14px; 
     font: inherit;
     color: #000000;
@@ -911,14 +884,13 @@ input[type="radio"].visually-hidden {
     
     border: none;
 }
-
-
 
 .search-form input,
 .search-form input::placeholder {
     padding-top: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+
     font-size: 14px; 
     font: inherit;
     color: #000000;
@@ -929,24 +901,20 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-
 .search-form input:hover,
 .search-form input:hover::-webkit-input-placeholder {
     background-color: #ebebeb;     
 }
-
 
 .search-form input:hover,
 .search-form input:hover:-ms-input-placeholder {
     background-color: #ebebeb;     
 }
 
-
 .search-form input:hover,
 .search-form input:hover::-ms-input-placeholder {
     background-color: #ebebeb;     
 }
-
 
 .search-form input:hover,
 .search-form input:hover::placeholder {
@@ -990,6 +958,7 @@ input[type="radio"].visually-hidden {
     margin-top: 26px; 
     margin-bottom: 0px;
     min-height: 58px;
+
     font-size: 21px;
     line-height: 26px;
 
@@ -997,6 +966,9 @@ input[type="radio"].visually-hidden {
 
 /*___________________Кнопки__________________*/
 .button {
+    padding: 3px 16px;
+    padding-right: 18px;
+
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
@@ -1005,12 +977,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase; 
     
     background-color: #81b3d2;
-    
-    padding: 3px 16px;
-    padding-right: 18px;
 }
-
-
 
 .button:hover {    
     background-color: #669ec0;
@@ -1047,12 +1014,13 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.map iframe{
-    border: none;
+.map iframe{    
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+
+    border: none;
 }
 
 /*_______________Подвал_______________*/
@@ -1060,6 +1028,7 @@ input[type="radio"].visually-hidden {
 .main-footer { 
     position: relative;
     z-index: 3;
+
     margin-top: 474px;
     padding: 31px 73px;
     
@@ -1067,6 +1036,7 @@ input[type="radio"].visually-hidden {
     
     background-color: rgba(255, 255, 255, 0.5);  
 }
+
 .main-footer.inner{
     margin-top: 2px;
 }
@@ -1131,6 +1101,9 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list { 
+    margin: 0;
+    padding: 0;
+
     display: -webkit-box; 
     display: -ms-flexbox; 
     display: flex;  
@@ -1141,9 +1114,7 @@ input[type="radio"].visually-hidden {
             justify-content: space-between;
     
     width: 151px;
-    margin: 0;
-    padding: 0;
-    
+
     list-style: none;
 }
 
@@ -1161,7 +1132,6 @@ input[type="radio"].visually-hidden {
     width: 200px;
     padding-left: 12px;
     padding-right: 25px;
-
     
     text-align: center;
     line-height: 26px;
@@ -1169,11 +1139,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-logo a {
-    display: inline-block;
+    display: inline-block;    
+    vertical-align: bottom;
     
     padding-top: 7px;
     padding-right: 3px;
-    
 }
 
 .footer-logo-img path  {
@@ -1194,31 +1164,31 @@ input[type="radio"].visually-hidden {
 }
 
 .filters{
-    /* display: none; */
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
-    background: #547a92 url("../img/filter-background.jpg")   no-repeat;
-    background-size: cover;
+    display: flex;   
+    
     padding-top: 26px;
     padding-bottom: 32px;
     padding-right: 72px;
     padding-left: 72px;
     color: #ffffff;
+     
+    background: #547a92 url("../img/filter-background.jpg")   no-repeat;
+    background-size: cover;
 }
 
 .filter-container{
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;   
+        display: -ms-flexbox;
+            display: flex;   
 }
 
 .filter{
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+        display: -ms-flexbox;
+            display: flex;
     width: 100%;
-    /* flex-direction: column; */
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1227,7 +1197,6 @@ input[type="radio"].visually-hidden {
 /* Фильтр */
 .filter-range {
     width: 318px;
-    /* margin: 50px auto; */
   
     color: #ffffff;
     text-transform: uppercase;
@@ -1241,17 +1210,12 @@ input[type="radio"].visually-hidden {
     line-height: 21px;
   }
   
- 
+
 .filter-column {
     padding: 0;
     margin: 0;
     margin-right: 119px;
-    border: none;
-    
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    border: none; 
   }
 
   .filter-column h3 {
@@ -1270,7 +1234,6 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
     margin-top: 25px;
-    /* padding-left: 41px; */
 }
 
 .filter-option  label {
@@ -1358,7 +1321,8 @@ input[type="radio"].visually-hidden {
   
   .price-controls label {
     display: inline-block;
-  
+    vertical-align: bottom;
+    
     padding-top: 5px;
 
     font-size: 14px;
@@ -1720,5 +1684,6 @@ input[type="radio"].visually-hidden {
 
 .rating span {
     display: block;
+
     margin-top: 3px; 
 }
