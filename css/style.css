@@ -69,6 +69,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
     position: absolute;
     left:50%;   
+    z-index: 2;
     
     -webkit-transform: translateX(-50%);     
         -ms-transform: translateX(-50%);       
@@ -146,22 +147,35 @@ input[type="radio"].visually-hidden {
 }
 
 .title-sedona {    
-    line-height: none;
-    padding: 0;
-    margin: 0;
-    background: url("../img/intro-mask.svg") bottom no-repeat,
-                url("../img/title-background.jpg") top no-repeat;                
-    background-color: #5496bd;
+    position: relative;
+    z-index: 1;
+
+    height: 431px;
+    padding-top: 77px;
+
+    background: #d9eaf2 url(../img/title-background.jpg) no-repeat;
+    background-size: cover;
 }
 
+.title-sedona:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 57px;
+    background: url(../img/polygon.png) no-repeat;
+    background-size: 100% 58px;
+}
 .title-sedona h1 {
     margin: 0; 
-    padding-top: 76px;
-    padding-bottom: 81px;
 }
 
 .title-sedona-img {
-    display: block;    
+    display: block;
+    width: 458px;
+    height: 352px;
     margin: 0 auto;
 }
 
@@ -174,7 +188,7 @@ input[type="radio"].visually-hidden {
     width: 576px;
     margin: 0 auto;
     margin-bottom: 29px;
-    padding-top: 57px;
+    padding-top: 59px;
     
     font-size: 21px;
     line-height: 26px;    
@@ -260,7 +274,6 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;  
 }
 
-
 .features-real-town h3 {
     color: #ffffff;
 }
@@ -270,7 +283,6 @@ input[type="radio"].visually-hidden {
     margin: 0;
     line-height: 0;
 }
-
 
 /*Второй пункт блока примуществ*/
 .features-bridge {
@@ -371,7 +383,6 @@ input[type="radio"].visually-hidden {
     width: 294px;  
 }
 
-
 .icon-home::before {
     content: "";
     position: absolute;
@@ -388,6 +399,7 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
 }
+
 .icon-food::before {
     content: "";
     position: absolute;
@@ -404,6 +416,7 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
 }
+
 .icon-souvenir::before {
     content: "";
     position: absolute;
@@ -1215,7 +1228,6 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 21px;
 }
-  
 
 .filter-column {
     padding: 0;
@@ -1281,6 +1293,34 @@ input[type="radio"].visually-hidden {
     height: 23px;
 
     background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.filter-input-checkbox:checked:disabled  + label::after {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0;
+
+    width: 26px;
+    height: 23px;
+    
+    background-image: url(../img/checkbox-on-disabled.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.filter-input-checkbox:disabled  + label::before {
+    content: "";
+
+    position: absolute;
+    left: 0px;
+    top: 0;
+
+    width: 26px;
+    height: 23px;
+    
+    background-image: url(../img/checkbox-off-disabled.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
