@@ -668,6 +668,7 @@ input[type="radio"].visually-hidden {
     width: 346px;
     margin-right: -23px;
     padding-left: 14px;
+    padding-right: 40px;
 
 }
 
@@ -690,6 +691,7 @@ input[type="radio"].visually-hidden {
     width: 346px;
     margin-right: -23px;
     padding-left: 13px;
+    padding-right: 40px;
 }
 
 .date-of-departure-calendar {
