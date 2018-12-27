@@ -165,8 +165,8 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 100%;
     height: 57px;
-    background: url(../img/polygon.png) no-repeat;
-    background-size: 100% 58px;
+    background: url(../img/intro-mask.svg) no-repeat;
+    background-size: 100% 59px;
 }
 .title-sedona h1 {
     margin: 0; 
@@ -360,8 +360,8 @@ input[type="radio"].visually-hidden {
             align-items: center;
     
     padding-bottom: 85px;
-    
-    min-height: 245px;
+    padding-top: 160px;
+    min-height: 85px;
     width: 400px;
     
     text-align: center;  
@@ -637,11 +637,11 @@ input[type="radio"].visually-hidden {
 .search-form-item {
     margin: 0;  
     padding: 0;    
-    height: 38px;
+    min-height: 38px;
 }
 
 .search-form-item input {
-    height: 38px;
+    min-height: 38px;
     width: 294px;
 
     text-transform: uppercase;
@@ -658,7 +658,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 29px;
+    margin-top: 1px;
+    margin-bottom: 28px;
 }
 .search-form-item-arrival input { 
     display: -webkit-box; 
@@ -674,13 +675,16 @@ input[type="radio"].visually-hidden {
 
 .search-form-item-arrival label,
 .search-form-item-departure label {
-    padding-top: 6px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    /* padding-top: 6px; */
+    max-width: 92px;
 }
 
 .date-of-arrival-calendar {
     position: absolute;
-    top: 6px;
-    right: 11px;   
+    top: 8px;
+    right: 8px;   
 }
 
 .search-form-item-departure input {
@@ -696,8 +700,8 @@ input[type="radio"].visually-hidden {
 
 .date-of-departure-calendar {
     position: absolute;
-    top: 6px;
-    right: 11px;        
+    top: 8px;
+    right: 8px;        
 }
 
 .search-container-adult {
@@ -735,6 +739,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form-adult input {
+    max-width: 50px;
     margin-left: 39px;
 }
 
@@ -861,7 +866,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input,
 .search-form input::-webkit-input-placeholder {
-    padding-top: 4px;
+    /* padding-top: 4px; */
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 14px; 
@@ -876,7 +881,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input,
 .search-form input:-ms-input-placeholder {
-    padding-top: 4px;
+    padding-top: 1px;
     box-sizing: border-box;
 
     font-size: 14px; 
@@ -891,7 +896,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input,
 .search-form input::-ms-input-placeholder {
-    padding-top: 4px;
+    padding-top: 1px;
     box-sizing: border-box;
 
     font-size: 14px; 
@@ -906,7 +911,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input,
 .search-form input::placeholder {
-    padding-top: 4px;
+    padding-top: 1px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -1029,14 +1034,20 @@ input[type="radio"].visually-hidden {
     background-color: #503e33;
 }
 /*________________Карта_________________*/
+.map-container {
+    display: flex;
+    flex-direction: column;
+    height: 474px;
+}
 .map {
     position: relative;
 }
 
 .map iframe {    
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* display: flex; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     z-index: 2;
 
     border: none;
@@ -1048,7 +1059,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     z-index: 3;
 
-    margin-top: 474px;
+    /* margin-top: 474px; */
     padding: 31px 73px;
     
     line-height: 26px;       
@@ -1457,9 +1468,7 @@ input[type="radio"].visually-hidden {
     background: #ffffff;
 }
 
-.sorting-form{
-    position: relative;
-
+.sorting-form{  
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1635,6 +1644,11 @@ input[type="radio"].visually-hidden {
     list-style: none;    
 }
 
+.sorting-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sorting-item {
     margin-right: 33px;
 }
@@ -1651,23 +1665,30 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.sorting-list.sorting-list-right a{
+.sorting-list-right a{
     border-bottom-color: rgba(0, 0, 0, 0.3);   
 }
 
-.sorting-list.sorting-list-right a:hover{
+.sorting-list-right a:hover{
     border-bottom-color: #000000;  
 }
 
-.sorting-list.sorting-list-right a:active {
+.sorting-list-right a:active {
     border-bottom-color: #81b3d2; 
+}
+
+.sorting-decrease,
+.sorting-increase {
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 .sorting-decrease a {
     margin: 0;
     position: absolute;
-    top: -5px;
-    right: 41px;
+    top: -13px;
+    right: 23px;
     width: 0px;
     height: 10px;
     border: 5.5px solid transparent;
@@ -1677,8 +1698,8 @@ input[type="radio"].visually-hidden {
 .sorting-increase a {
     margin: 0;
     position: absolute;
-    top: 9px;
-    right: 19px;
+    top: 2px;
+    right: 0px;
     width: 0px;
     height: 10px;
     border: 5.5px solid transparent;
@@ -1691,8 +1712,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-right {
-    position: absolute;
-    right: 55px;
+    display: flex;
+    margin-left: 464px;
+    /* justify-content: space-between; */
+    /* width: 430px; */
+    /* height: 10px; */
+    /* position: absolute; */
+    /* right: 55px; */
 }
 
 .sorting-item .sorting-link-active {
