@@ -47,7 +47,7 @@ input[type="radio"].visually-hidden {
             clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*_____________________Блок шапка___________________________*/
+
 .main-header {
 	min-width: 320px;
 }
@@ -63,7 +63,6 @@ input[type="radio"].visually-hidden {
     color: #000000;
     
     background-color: #ffffff; 
-
 }
 
 .main-header-logo {
@@ -82,6 +81,7 @@ input[type="radio"].visually-hidden {
     display: flex; 
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
+
     margin: 0;
     padding: 0;  
     padding-left: 72px;
@@ -138,8 +138,6 @@ input[type="radio"].visually-hidden {
 .site-navigation a:active {
     color: rgba(0, 0, 0, 0.3);     
 }
-
-/*______________________Блок маин_______________________________*/
 .container {
     margin: 0 auto;
 
@@ -158,13 +156,16 @@ input[type="radio"].visually-hidden {
 }
 
 .title-sedona:after {
+    display: block;
+
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    display: block;
+    
     width: 100%;
     height: 57px;
+
     background: url(../img/intro-mask.svg) no-repeat;
     background-size: 100% 59px;
 }
@@ -174,6 +175,7 @@ input[type="radio"].visually-hidden {
 
 .title-sedona-img {
     display: block;
+
     width: 458px;
     height: 352px;
     margin: 0 auto;
@@ -185,6 +187,7 @@ input[type="radio"].visually-hidden {
 
 .slogan-sedona {    
     display: block;
+
     width: 576px;
     margin: 0 auto;
     margin-bottom: 29px;
@@ -194,7 +197,6 @@ input[type="radio"].visually-hidden {
     line-height: 26px;    
     font-weight: bold;    
     text-align: center;
-    
 }
 
 .reasons-sedona {
@@ -745,6 +747,12 @@ input[type="radio"].visually-hidden {
     margin-left: 39px;
 }
 
+.search-form-adult label {
+    display: block;
+
+    max-width: 72px;
+}
+
 .item-quantity {
     width: 180px;
     margin-left: 5px
@@ -1041,12 +1049,11 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     height: 474px;
 }
-.map {
-    position: relative;
-}
 
 .map iframe {
     z-index: 2;
+
+    background-image: url(../img/map.jpg);
 
     border: none;
 }
@@ -1290,6 +1297,10 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-input-checkbox:focus + label::before{
+    outline: 2px solid rgb(67, 22, 228);
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1717,6 +1728,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-item .sorting-link-active {
     border-bottom: none;
+    
     color: #81b3d2;
 }
 
@@ -1725,12 +1737,12 @@ input[type="radio"].visually-hidden {
 }
 
 .rating {
-    min-height: 27px;
-    color: #666666;    
+    min-height: 27px;     
     padding-right: 13px;
     padding-left: 15px;
-
+     
     background-color: #f2f2f2;
+    color: #666666;
 }
 
 .rating span {
