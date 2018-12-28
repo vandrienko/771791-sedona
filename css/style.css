@@ -675,10 +675,11 @@ input[type="radio"].visually-hidden {
 
 .search-form-item-arrival label,
 .search-form-item-departure label {
+    display: block;
     margin-top: 6px;
     margin-bottom: 5px;
     /* padding-top: 6px; */
-    max-width: 92px;
+    max-width: 100px;
 }
 
 .date-of-arrival-calendar {
@@ -693,7 +694,7 @@ input[type="radio"].visually-hidden {
     display: flex;
    
     width: 346px;
-    margin-right: -23px;
+    margin-right: -17px;
     padding-left: 13px;
     padding-right: 40px;
 }
@@ -708,6 +709,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;    
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1043,11 +1045,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.map iframe {    
-    /* display: flex; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
+.map iframe {
     z-index: 2;
 
     border: none;
@@ -1059,7 +1057,6 @@ input[type="radio"].visually-hidden {
     position: relative;
     z-index: 3;
 
-    /* margin-top: 474px; */
     padding: 31px 73px;
     
     line-height: 26px;       
@@ -1337,6 +1334,8 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
+.filter-input:focus {outline: tomato; border:yellow 50px so;}
 
 .price-controls {
     position: relative;
@@ -1686,25 +1685,24 @@ input[type="radio"].visually-hidden {
 
 .sorting-decrease a {
     margin: 0;
-    position: absolute;
-    top: -13px;
-    right: 23px;
+
+    display: block;    
+    margin-right: 12px;
+    margin-top: -3px;
     width: 0px;
-    height: 10px;
+    height: 0px;
     border: 5.5px solid transparent;
     border-bottom: 10px solid #cacaca;
-    overflow: hidden;
 }
 .sorting-increase a {
     margin: 0;
-    position: absolute;
-    top: 2px;
-    right: 0px;
+
+    display: block;
+    margin-top: 2px;
     width: 0px;
-    height: 10px;
+    height: 0px;    
     border: 5.5px solid transparent;
     border-top: 10px solid #cacaca;
-    overflow: hidden;    
 }
 
 .sorting-increase a {
@@ -1713,12 +1711,8 @@ input[type="radio"].visually-hidden {
 
 .sorting-list-right {
     display: flex;
-    margin-left: 464px;
-    /* justify-content: space-between; */
-    /* width: 430px; */
-    /* height: 10px; */
-    /* position: absolute; */
-    /* right: 55px; */
+
+    margin-left: 430px;  
 }
 
 .sorting-item .sorting-link-active {
