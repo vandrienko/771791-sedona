@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
     z-index: 1;
 
     height: 431px;
-    padding-top: 77px;
+    padding-top: 76px;
 
     background: #d9eaf2 url(../img/title-background.jpg) no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ input[type="radio"].visually-hidden {
     left: 0;
     
     width: 100%;
-    height: 57px;
+    height: 56px;
 
     background: url(../img/intro-mask.svg) no-repeat;
     background-size: 100% 59px;
@@ -190,8 +190,8 @@ input[type="radio"].visually-hidden {
 
     width: 576px;
     margin: 0 auto;
-    margin-bottom: 29px;
-    padding-top: 59px;
+    margin-bottom: 28px;
+    padding-top: 61px;
     
     font-size: 21px;
     line-height: 26px;    
@@ -206,7 +206,6 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
 }
 
-/*______________Блок примуществ_______________*/
 .features-list {
     margin: 0;
     padding: 0;
@@ -286,7 +285,6 @@ input[type="radio"].visually-hidden {
     line-height: 0;
 }
 
-/*Второй пункт блока примуществ*/
 .features-bridge {
     margin: 0;
     padding: 0;
@@ -295,7 +293,7 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     color: #ffffff;
-/* Не понятно откуда зазор между блоками(     */
+
     background-color: #81b3d2;  
 }
 
@@ -405,7 +403,7 @@ input[type="radio"].visually-hidden {
 .icon-food::before {
     content: "";
     position: absolute;
-    bottom: 75px;
+    bottom: 76px;
     left: 50%;
     
     display: table;
@@ -452,7 +450,7 @@ input[type="radio"].visually-hidden {
    
             align-items: center;
 }
-/*________________Блок поиска_______________*/
+
 .search-forms b {
     display: block;
     margin-top: 51px;
@@ -500,7 +498,6 @@ input[type="radio"].visually-hidden {
     background-color: #766357;
 }
 
-/*______________Модальное окно поиска гостиницы ________*/
 .search {
     position: relative;
 
@@ -511,12 +508,12 @@ input[type="radio"].visually-hidden {
     z-index: 5;
     -webkit-animation: bounce 0.6s;
             animation: bounce 0.6s; 
-  }
+}
 
 .modal-error {
     -webkit-animation: shake 0.6s;
         animation: shake 0.6s;
-  }
+}
 
 @-webkit-keyframes bounce {
     0% {
@@ -535,7 +532,7 @@ input[type="radio"].visually-hidden {
         -webkit-transform: translateY(0);
             transform: translateY(0);
     }
-  }
+}
 
 @keyframes bounce {
     0% {
@@ -554,7 +551,7 @@ input[type="radio"].visually-hidden {
         -webkit-transform: translateY(0);
             transform: translateY(0);
     }
-  }
+}
   
 @-webkit-keyframes shake {
     0%,
@@ -577,7 +574,7 @@ input[type="radio"].visually-hidden {
         -webkit-transform: translateX(10px);
             transform: translateX(10px);
     }
-  }
+}
   
 @keyframes shake {
     0%,
@@ -600,7 +597,7 @@ input[type="radio"].visually-hidden {
         -webkit-transform: translateX(10px);
             transform: translateX(10px);
     }
-  }
+}
 
 
 .search-container {
@@ -612,7 +609,7 @@ input[type="radio"].visually-hidden {
             transform: translateX(-50%);   
 
     padding: 55px;
-    width: 457px; 
+    width: 458px; 
     
     font-weight: bold;
     line-height: 26px;
@@ -660,8 +657,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 1px;
-    margin-bottom: 28px;
+    margin-top: 0px;
+    margin-bottom: 29px;
 }
 .search-form-item-arrival input { 
     display: -webkit-box; 
@@ -678,9 +675,9 @@ input[type="radio"].visually-hidden {
 .search-form-item-arrival label,
 .search-form-item-departure label {
     display: block;
-    margin-top: 6px;
+    
+    margin-top: 5px;
     margin-bottom: 5px;
-    /* padding-top: 6px; */
     max-width: 100px;
 }
 
@@ -696,8 +693,8 @@ input[type="radio"].visually-hidden {
     display: flex;
    
     width: 346px;
-    margin-right: -17px;
-    padding-left: 13px;
+    margin-right: -21px;
+    padding-left: 12px;
     padding-right: 40px;
 }
 
@@ -711,7 +708,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;    
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -919,9 +917,8 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.search-form input,
-.search-form input::placeholder {
-    padding-top: 1px;
+.search-form input, .search-form input::placeholder {
+         padding-top: 3.5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -959,6 +956,8 @@ input[type="radio"].visually-hidden {
 .search-form input:focus::-webkit-input-placeholder {
     border-color: #e5e5e5;
     color: #000000;
+    
+    background-color: chartreuse;
     
     background-color: #ffffff; 
 }
@@ -1045,8 +1044,13 @@ input[type="radio"].visually-hidden {
 }
 /*________________Карта_________________*/
 .map-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 474px;
 }
 
@@ -1123,14 +1127,14 @@ input[type="radio"].visually-hidden {
     background-color: #669ec0;
 }
 
-.social-container:active path {
+.social-button:active path {
     fill: rgba(255, 255, 255, 0.3);
 
     background-color: #5496bd;
     border: none;
 }
 
-.social-container:active a {
+.social-button:active a {
     fill: rgba(255, 255, 255, 0.3);
 
     background-color: #5496bd;
@@ -1603,6 +1607,8 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+
+    cursor: pointer;
 }
 
 .hotels-detailed {
@@ -1655,8 +1661,12 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .sorting-item {
@@ -1721,6 +1731,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin-left: 430px;  
