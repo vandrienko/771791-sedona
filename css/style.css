@@ -1202,18 +1202,11 @@ input[type="radio"].visually-hidden {
 .social-button:hover {
     background-color: #669ec0;
 }
-
+.social-button:active,
 .social-button:active path {
-    fill: rgba(255, 255, 255, 0.3);
-
     background-color: #5496bd;
     border: none;
-}
-
-.social-button:active a {
-    fill: rgba(255, 255, 255, 0.3);
-
-    background-color: #5496bd;
+    fill: rgba(255, 255, 255, 0.3); 
 }
 
 .social-list { 
