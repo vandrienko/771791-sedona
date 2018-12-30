@@ -483,6 +483,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-forms a {    
+    min-width: 290px;
     padding: 30px 139px; 
 }
 
@@ -1895,7 +1896,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
         display: -ms-flexbox;
             display: flex;
-    margin-left: 430px;  
+    margin-left: 428.5px;  
 }
 
 .sorting-item .sorting-link-active {
