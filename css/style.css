@@ -1347,11 +1347,11 @@ input[type="radio"].visually-hidden {
     fill: #000000;
 }
 
-.footer-logo-img path:hover {
+.footer-logo-img:hover path {
     fill: #81b3d2;    
 }
 
-.footer-logo-img path:active {
+.footer-logo-img:active path {
     fill: #bdbbbc;
 }
 
