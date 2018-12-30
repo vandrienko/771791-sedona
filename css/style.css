@@ -1242,6 +1242,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer.inner {
     margin-top: 2px;
+
+    background-color:#fefefe;
 }
 
 .main-footer-container {
