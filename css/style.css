@@ -993,6 +993,51 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
+.search-form input, .search-form input::-webkit-input-placeholder {
+         padding-top: 3.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 14px; 
+    font: inherit;
+    color: #000000;
+    font-weight: bold;
+    
+    background-color: #f2f2f2; 
+    
+    border: none;
+}
+
+.search-form input, .search-form input:-ms-input-placeholder {
+         padding-top: 3.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 14px; 
+    font: inherit;
+    color: #000000;
+    font-weight: bold;
+    
+    background-color: #f2f2f2; 
+    
+    border: none;
+}
+
+.search-form input, .search-form input::-ms-input-placeholder {
+         padding-top: 3.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 14px; 
+    font: inherit;
+    color: #000000;
+    font-weight: bold;
+    
+    background-color: #f2f2f2; 
+    
+    border: none;
+}
+
 .search-form input, .search-form input::placeholder {
          padding-top: 3.5px;
     -webkit-box-sizing: border-box;
@@ -1743,16 +1788,14 @@ input[type="radio"].visually-hidden {
 }
 .sorting-item a {
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dashed #81b3d2;
+    /* border-bottom: 1px dashed #81b3d2; */
 }
 
 .sorting-item a:hover {
     color: #81b3d2;
 }
 
-.sorting-item a:active {
-    color: #000000;
-}
+
 
 .sorting-list-right a{
     border-bottom-color: rgba(0, 0, 0, 0.3);   
@@ -1761,10 +1804,24 @@ input[type="radio"].visually-hidden {
 .sorting-list-right a:hover{
     border-bottom-color: #000000;  
 }
+.sorting-list-right a:active{
+    border-bottom-color:#81b3d2;  
 
-.sorting-list-right a:active {
-    border-bottom-color: #81b3d2; 
 }
+
+.sorting-item a:active {
+    color: #000000;
+}
+
+ .sorting-type a,
+.sorting-rating a {
+    border-bottom: 1px dashed #81b3d2;
+} 
+
+.sorting-type a:active,
+.sorting-rating a:active {
+    border-bottom: none;     
+} 
 
 .sorting-decrease,
 .sorting-increase {
