@@ -742,7 +742,7 @@ input[type="radio"].visually-hidden {
 
 .search-form-adult input {
     max-width: 50px;
-    margin-left: 39px;
+    /* margin-left: 39px; */
 }
 
 .search-form-adult label {
@@ -757,21 +757,23 @@ input[type="radio"].visually-hidden {
 }
 
 .item-quantity input {
-    margin-left: 29px;
+    /* margin-left: 29px; */
 }
 
 .button-adult-remove {
     padding: 0;
 
-    position: relative;
-    top: 0px;
-    left: 39px;
+    position: relative;  
 
     width: 38px;
     height: 38px;
+    margin-left: 41px;
+
     border: none;
 
     background-color: #f2f2f2;
+
+    cursor: pointer;
 }
 
 .adult-remove {
@@ -792,13 +794,38 @@ input[type="radio"].visually-hidden {
     border: none;
 
     background-color: #f2f2f2;
-}
 
+    cursor: pointer;
+}
+.button-adult-add::before {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 19px;
+    left: 14px;
+    width: 11px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #a9a9a9;
+}
+.button-adult-add::after {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 15px;
+    left: 18px;
+    width: 3px;
+    height: 11px;
+    border-radius: 1px;
+    background-color: #a9a9a9;
+}
 .adult-add {
     position: absolute;
     top: 15px;
     left: 13px;
 }
+
+
 
 .children-remove {
     position: absolute;
@@ -808,15 +835,18 @@ input[type="radio"].visually-hidden {
 
 .button-children-remove {  
     position: relative;
-    top: 0px;
-    left: 29px;
+    /* top: 0px; */
+    /* left: 29px; */
 
     width: 38px;
     height: 38px;
-    padding: 0;    
+    padding: 0; 
+    margin-left: 29px;   
     border: none;
 
     background-color: #f2f2f2;
+
+    cursor: pointer;
 }
 
 .children-add {
@@ -835,26 +865,72 @@ input[type="radio"].visually-hidden {
     border: none;
 
     background-color: #f2f2f2;
+
+    cursor: pointer;
+}
+.button-children-remove::before {  
+    content: "";
+    position: absolute;
+    z-index: 7;
+    top: 18px;
+    left: 13px;
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
 }
 
-.adult-remove:hover line,
-.adult-add:hover line {
-    stroke: #000000;
+.button-children-add::before {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 19px;
+    left: 14px;
+    width: 11px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #a9a9a9;
+}
+.button-children-add::after {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 15px;
+    left: 18px;
+    width: 3px;
+    height: 11px;
+    border-radius: 1px;
+    background-color: #a9a9a9;
 }
 
-.adult-remove:active line,
-.adult-add:active line {
-    stroke: #81b3d2;
+.button-adult-remove::before  {  
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 19px;
+    left: 13px;
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
 }
 
-.children-remove:hover line,
-.children-add:hover line {
-    stroke: #000000;
+ .button-adult-remove:hover::before,
+ .button-adult-add:hover::before,
+ .button-adult-add:hover::after,
+ .button-children-remove:hover::before,
+ .button-children-add:hover::before,
+ .button-children-add:hover::after {
+    background-color: #000000;    
 }
 
-.children-remove:active line,
-.children-add:active line {
-    stroke: #81b3d2;
+.button-adult-remove:active::before,
+.button-adult-add:active::before,
+.button-adult-add:active::after,
+.button-children-remove:active::before,
+.button-children-add:active::before,
+.button-children-add:active::after {
+   background-color: #81b3d2;    
 }
 
 .date-of-arrival-calendar path,
