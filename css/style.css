@@ -1801,11 +1801,12 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.sorting-list {
-    
+.sorting-list {    
     display: -webkit-box;
         display: -ms-flexbox;
             display: flex;
+    flex-wrap: wrap;
+    width: 730px;
     margin: 0;
 
     font-weight: normal;
@@ -1899,7 +1900,9 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
         display: -ms-flexbox;
             display: flex;
-    margin-left: 428.5px;  
+width: 34px;
+padding: 0;
+padding-left: 12px;
 }
 
 .sorting-item .sorting-link-active {
