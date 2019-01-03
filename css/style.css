@@ -1853,7 +1853,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-type a,
 .sorting-rating a {
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 } 
 
 .sorting-type a:active,
