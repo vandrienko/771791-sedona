@@ -499,9 +499,12 @@ input[type="radio"].visually-hidden {
 
 .search {
     position: relative;
+}
 
+.search-hide {
     display: none;
 }
+
 .modal-show {    
     z-index: 5;
 
@@ -608,13 +611,14 @@ input[type="radio"].visually-hidden {
             transform: translateX(-50%);
               
     width: 458px; 
-    padding: 55px;    
+    padding: 55px;        
     
     font-weight: bold;
     line-height: 26px;
     color: #000000;     
 
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 7px 15px rgba(0,1,1,.15);
 }
 
 .search-form {
@@ -1227,11 +1231,22 @@ input[type="radio"].visually-hidden {
     height: 474px;
 }
 
-.map iframe {
+.map-img-hide {
+    display: none;
+}
+
+.map-img-activ {
     z-index: 2;
 
-    background-image: url(../img/map.jpg);
+    display: none;
+
     border: none;
+}
+
+.map-img-show {
+    z-index: 3;
+
+    display: table;   
 }
 
 .main-footer { 
