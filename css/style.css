@@ -680,6 +680,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 5px;    
 }
 
+.calendar-linc:focus svg {
+    outline: 3px solid rgb(77, 144, 254);
+}
+
 .date-of-arrival-calendar {
     position: absolute;
     top: 8px;
@@ -1461,7 +1465,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:focus + label::before{
-    outline: 2px solid rgb(67, 22, 228);
+    outline: 3px solid rgb(77, 144, 254);
 }
 
 .filter-input-checkbox:checked + label::after {
