@@ -340,7 +340,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;        
         display: -ms-flexbox;    
             display: flex;
-    flex-wrap: wrap;        
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;        
     margin: 0;
     padding: 0;
 
@@ -618,7 +619,8 @@ input[type="radio"].visually-hidden {
     color: #000000;     
 
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 7px 15px rgba(0,1,1,.15);
+    -webkit-box-shadow: 0 7px 15px rgba(0,1,1,.15);
+            box-shadow: 0 7px 15px rgba(0,1,1,.15);
 }
 
 .search-form {
@@ -1824,7 +1826,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
         display: -ms-flexbox;
             display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 730px;
     margin: 0;
 
